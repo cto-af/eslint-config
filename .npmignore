@@ -1,0 +1,7 @@
+node_modules
+.eslintrc.js
+.editorconfig
+pnpm-lock.yaml
+rules/
+test.js
+.vscode/

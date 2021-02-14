@@ -1,0 +1,13 @@
+{
+  "name": "eslint-plugin-hildjj",
+  "version": "0.0.0",
+  "description": "eslint plugins for eslint config",
+  "private": true,
+  "main": "index.js",
+  "author": "Joe Hildebrand <joe-github@cursive.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.5",
+    "got": "^11.8.1"
+  }
+}
