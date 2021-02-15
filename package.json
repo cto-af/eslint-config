@@ -11,6 +11,10 @@
   ],
   "author": "Joe Hildebrand <joe-github@cursive.net>",
   "license": "MIT",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/hildjj/ctoaf-eslint-config"
+  },
   "peerDependencies": {
     "eslint-plugin-node": "^11.1.0"
   },
