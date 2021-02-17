@@ -13,10 +13,12 @@
   "license": "MIT",
   "repository": "hildjj/ctoaf-eslint-config",
   "peerDependencies": {
+    "eslint-plugin-ava": "^11.0.0",
     "eslint-plugin-node": "^11.1.0"
   },
   "devDependencies": {
     "eslint": "^7.20.0",
+    "eslint-plugin-ava": "^11.0.0",
     "eslint-plugin-hildjj": "link:rules",
     "eslint-plugin-node": "^11.1.0"
   }
