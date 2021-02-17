@@ -2,9 +2,8 @@
 
 module.exports = {
   extends: './index.js',
-  plugins: ['hildjj', 'unicorn'],
+  plugins: ['hildjj'],
   rules: {
     'hildjj/sort-rules': 'error'
-    // 'unicorn/string-content': 'error'
   }
 }

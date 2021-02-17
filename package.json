@@ -4,7 +4,8 @@
   "description": "hildjj's lint rules",
   "main": "index.js",
   "scripts": {
-    "test": "eslint -c index.js *.js"
+    "test": "eslint -c index.js *.js",
+    "lint": "eslint **.js"
   },
   "keywords": [
     "lint"
