@@ -17,10 +17,18 @@
     "eslint-plugin-ava": "^11.0.0",
     "eslint-plugin-node": "^11.1.0"
   },
+  "peerDependenciesMeta": {
+    "eslint-plugin-ava": {
+      "optional": true
+    }
+  },
   "devDependencies": {
-    "eslint": "^7.20.0",
+    "eslint": "^7.21.0",
     "eslint-plugin-ava": "^11.0.0",
     "eslint-plugin-hildjj": "link:rules",
     "eslint-plugin-node": "^11.1.0"
+  },
+  "engines": {
+    "node": ">=10.18.0"
   }
 }
