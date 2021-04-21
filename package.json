@@ -1,6 +1,6 @@
 {
   "name": "@cto.af/eslint-config",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "hildjj's lint rules",
   "main": "index.js",
   "scripts": {
