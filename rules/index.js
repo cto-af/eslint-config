@@ -1,8 +1,6 @@
 // eslint-disable hildjj/sort-rules
 'use strict'
-const {Linter} = require('eslint')
-const linter = new Linter()
-const rules = linter.getRules()
+const {CLIEngine} = require('eslint')
 
 function getIndent(node, src) {
   const [tok] = src.getTokens(node)
@@ -15,24 +13,31 @@ const meta = {
     description: 'Sort eslint rules',
     category: 'Stylistic Issues',
     recommended: false,
-    url: 'http//example.com'
+    url: 'https://github.com/hildjj/ctoaf-eslint-config/tree/main/rules'
   }
 }
 
 module.exports = {
   rules: {
+    // eslint-disable-next-line hildjj/sort-rules
     'sort-rules': {
       meta,
       create(context) {
+        const cli = new CLIEngine({
+          cwd: context.getCwd(),
+          // This is a hack.  Should read the plugins from the current file.
+          plugins: ['node', 'ava'],
+        })
+        const rules = cli.getRules()
         const src = context.getSourceCode()
         return {
           'ObjectExpression[parent.key.name="rules"]': node => {
             const comments = src.getCommentsInside(node)
             const lines = comments.reduce((t, c) => {
-              const match = c.value.match(/.*\[([^\]]+)\].*/)
+              const match = c.value.match(/.*\[(?<title>[^\]]+)\].*/)
               if (match) {
                 t.push({
-                  name: match[1],
+                  name: match.groups.title,
                   line: c.loc.start.line,
                   range: c.range,
                   rules: []
@@ -45,7 +50,23 @@ module.exports = {
               const key = p.key.name || p.key.value
               const kr = rules.get(key)
               if (!kr) {
+                context.report({
+                  message: 'Unknown rule "{{ key }}"',
+                  node: p.key,
+                  data: {
+                    key
+                  }
+                })
                 continue
+              }
+              if (kr.meta.deprecated) {
+                context.report({
+                  message: 'Rule "{{ key }}" is deprecated',
+                  node: p.key,
+                  data: {
+                    key
+                  }
+                })
               }
               const section = kr.meta.docs.category
               if (!section) {
@@ -88,7 +109,7 @@ ${getIndent(p.key, src)}`)
                       // eslint-disable-next-line prefer-destructuring
                       range[1] = tokAfter.range[1]
                     }
-                    range[0] -= (p.loc.start.column + 1) // newline
+                    range[0] -= (p.loc.start.column + 1) // Newline
                     const orig = src.text.slice(...range)
                     return [
                       fixer.removeRange(range),
@@ -115,7 +136,7 @@ ${getIndent(p.key, src)}`)
                       // eslint-disable-next-line prefer-destructuring
                       range[1] = tokAfter.range[1]
                     }
-                    range[0] -= (p.loc.start.column + 1) // newline
+                    range[0] -= (p.loc.start.column + 1) // Newline
                     const orig = src.text.slice(...range)
                     return [
                       fixer.removeRange(range),

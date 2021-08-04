@@ -8,6 +8,10 @@
   "license": "MIT",
   "devDependencies": {
     "cheerio": "^1.0.0-rc.5",
+    "eslint": "^7.32.0",
     "got": "^11.8.1"
+  },
+  "engines": {
+    "node": ">=12.19"
   }
 }

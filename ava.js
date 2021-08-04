@@ -1,6 +1,6 @@
 'use strict'
 
-// intended to be used in the `test` subdir, with:
+// Intended to be used in the `test` subdir, with:
 //
 // module.exports = {
 //   extends: '@cto.af/eslint-config/ava'
