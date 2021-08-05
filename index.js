@@ -1,7 +1,6 @@
 'use strict'
 
 module.exports = {
-  extends: ['plugin:markdown/recommended'],
   env: {
     node: true,
     es6: true,
