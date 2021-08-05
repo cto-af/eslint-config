@@ -13,8 +13,8 @@ const meta = {
     description: 'Sort eslint rules',
     category: 'Stylistic Issues',
     recommended: false,
-    url: 'https://github.com/hildjj/ctoaf-eslint-config/tree/main/rules'
-  }
+    url: 'https://github.com/hildjj/ctoaf-eslint-config/tree/main/rules',
+  },
 }
 
 module.exports = {
@@ -26,7 +26,7 @@ module.exports = {
         const cli = new CLIEngine({
           cwd: context.getCwd(),
           // This is a hack.  Should read the plugins from the current file.
-          plugins: ['node', 'ava'],
+          plugins: ['node', 'ava', 'jsdoc'],
         })
         const rules = cli.getRules()
         const src = context.getSourceCode()
@@ -40,7 +40,7 @@ module.exports = {
                   name: match.groups.title,
                   line: c.loc.start.line,
                   range: c.range,
-                  rules: []
+                  rules: [],
                 })
               }
               return t
@@ -54,21 +54,21 @@ module.exports = {
                   message: 'Unknown rule "{{ key }}"',
                   node: p.key,
                   data: {
-                    key
-                  }
+                    key,
+                  },
                 })
                 continue
               }
-              if (kr.meta.deprecated) {
+              if (kr?.meta?.deprecated) {
                 context.report({
                   message: 'Rule "{{ key }}" is deprecated',
                   node: p.key,
                   data: {
-                    key
-                  }
+                    key,
+                  },
                 })
               }
-              const section = kr.meta.docs.category
+              const section = kr?.meta?.docs?.category
               if (!section) {
                 continue
               }
@@ -79,14 +79,14 @@ module.exports = {
                   node: p.key,
                   data: {
                     key,
-                    section
+                    section,
                   },
                   fix(fixer) {
                     const slug = section.replace(/\s+/g, '-').toLowerCase()
                     return fixer.insertTextBefore(p, `\
 // [${section}](https://eslint.org/docs/rules/#${slug})
 ${getIndent(p.key, src)}`)
-                  }
+                  },
                 })
                 continue
               }
@@ -100,7 +100,7 @@ ${getIndent(p.key, src)}`)
                   message: '{{ key }} before any section',
                   node: p.key,
                   data: {
-                    key
+                    key,
                   },
                   fix(fixer) {
                     const {range} = p
@@ -113,9 +113,9 @@ ${getIndent(p.key, src)}`)
                     const orig = src.text.slice(...range)
                     return [
                       fixer.removeRange(range),
-                      fixer.insertTextAfterRange(lines[i].range, orig)
+                      fixer.insertTextAfterRange(lines[i].range, orig),
                     ]
-                  }
+                  },
                 })
                 continue
               }
@@ -127,7 +127,7 @@ ${getIndent(p.key, src)}`)
                   data: {
                     key,
                     section,
-                    found: lines[last].name
+                    found: lines[last].name,
                   },
                   fix(fixer) {
                     const {range} = p
@@ -140,9 +140,9 @@ ${getIndent(p.key, src)}`)
                     const orig = src.text.slice(...range)
                     return [
                       fixer.removeRange(range),
-                      fixer.insertTextAfterRange(lines[i].range, orig)
+                      fixer.insertTextAfterRange(lines[i].range, orig),
                     ]
-                  }
+                  },
                 })
                 continue
               }
@@ -158,16 +158,16 @@ ${getIndent(p.key, src)}`)
                     message: '{{ key }} out of order',
                     node: p.key,
                     data: {
-                      key
+                      key,
                     },
                   })
                 }
                 prev = key
               }
             }
-          }
+          },
         }
-      }
-    }
-  }
+      },
+    },
+  },
 }

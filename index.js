@@ -1,18 +1,27 @@
 'use strict'
 
 module.exports = {
+  extends: ['plugin:markdown/recommended'],
   env: {
     node: true,
     es6: true,
     es2020: true,
   },
   plugins: [
+    'jsdoc',
     'node',
   ],
   parserOptions: {
     ecmaVersion: 2020,
   },
   reportUnusedDisableDirectives: true,
+  settings: {
+    jsdoc: {
+      tagNamePreference: {
+        extends: 'extends',
+      },
+    },
+  },
   rules: {
     // Last updated 2021-08-03, v7.32.0
 
@@ -206,10 +215,10 @@ module.exports = {
       ignoreConsecutiveComments: true,
     }],
     'comma-dangle': ['error', {
-      arrays: 'only-multiline',
-      objects: 'only-multiline',
-      imports: 'only-multiline',
-      exports: 'only-multiline',
+      arrays: 'always-multiline',
+      objects: 'always-multiline',
+      imports: 'always-multiline',
+      exports: 'always-multiline',
       functions: 'never',
     }],
     'comma-spacing': 'error',
@@ -230,6 +239,11 @@ module.exports = {
     // id-match
     'implicit-arrow-linebreak': ['error', 'beside'],
     indent: ['error', 2, {SwitchCase: 1}],
+
+    'jsdoc/require-jsdoc': ['error', {
+      publicOnly: { ancestorsOnly: true },
+    }],
+
     // Not needed
     // jsx-quotes
     'key-spacing': 'error',
@@ -237,7 +251,10 @@ module.exports = {
     // I'm all over the place on these
     // 'line-comment-position': 'error',
     'linebreak-style': 'error',
-    'lines-around-comment': ['error', {allowClassStart: true}],
+    'lines-around-comment': ['error', {
+      allowBlockStart: true,
+      allowClassStart: true,
+    }],
     'lines-between-class-members': 'error',
     // No.
     // max-depth
@@ -373,6 +390,56 @@ module.exports = {
     'symbol-description': 'error',
     'template-curly-spacing': 'error',
     'yield-star-spacing': ['error', 'before'],
+
+    'jsdoc/check-access': 'error',
+    'jsdoc/check-alignment': 'error',
+    'jsdoc/check-examples': 'error',
+    // Track https://github.com/gajus/eslint-plugin-jsdoc/issues/715
+    // 'jsdoc/check-indentation': 'error',
+    'jsdoc/check-line-alignment': 'error',
+    'jsdoc/check-param-names': 'error',
+    'jsdoc/check-property-names': 'error',
+    'jsdoc/check-syntax': 'error',
+    'jsdoc/check-tag-names': 'error',
+    'jsdoc/check-types': 'error',
+    'jsdoc/check-values': 'error',
+    'jsdoc/empty-tags': 'error',
+    'jsdoc/implements-on-classes': 'error',
+    'jsdoc/match-description': 'error',
+    'jsdoc/multiline-blocks': 'error',
+    'jsdoc/newline-after-description': 'error',
+    'jsdoc/no-bad-blocks': 'error',
+    // 'jsdoc/no-defaults': 'error',
+    // 'jsdoc/no-missing-syntax': 'error',
+    'jsdoc/no-multi-asterisks': 'error',
+    // 'jsdoc/no-restricted-syntax': 'error',
+    // 'jsdoc/no-types': 'error',
+    'jsdoc/no-undefined-types': 'error',
+    'jsdoc/require-asterisk-prefix': 'error',
+    'jsdoc/require-description': ['error', { exemptedBy: ['inheritdoc', 'private', 'ignore']}],
+    'jsdoc/require-description-complete-sentence': 'error',
+    // 'jsdoc/require-example': 'error',
+    // 'jsdoc/require-file-overview': 'error',
+    'jsdoc/require-hyphen-before-param-description': ['error', 'never'],
+    'jsdoc/require-param': ['error', { exemptedBy: ['inheritdoc', 'private', 'ignore']}],
+    'jsdoc/require-param-description': 'error',
+    'jsdoc/require-param-name': 'error',
+    'jsdoc/require-param-type': 'error',
+    'jsdoc/require-property': 'error',
+    'jsdoc/require-property-description': 'error',
+    'jsdoc/require-property-name': 'error',
+    'jsdoc/require-property-type': 'error',
+    'jsdoc/require-returns': ['error', {
+      exemptedBy: ['ignore'],
+    }],
+    'jsdoc/require-returns-check': 'error',
+    'jsdoc/require-returns-description': 'error',
+    'jsdoc/require-returns-type': 'error',
+    'jsdoc/require-throws': 'error',
+    'jsdoc/require-yields': 'error',
+    'jsdoc/require-yields-check': 'error',
+    'jsdoc/tag-lines': 'error',
+    'jsdoc/valid-types': 'error',
   },
   overrides: [
     {

@@ -15,6 +15,8 @@
   "repository": "hildjj/ctoaf-eslint-config",
   "peerDependencies": {
     "eslint-plugin-ava": "^12.0.0",
+    "eslint-plugin-jsdoc": "^36.0.6",
+    "eslint-plugin-markdown": "^2.2.0",
     "eslint-plugin-node": "^11.1.0"
   },
   "peerDependenciesMeta": {
@@ -26,6 +28,8 @@
     "eslint": "^7.32.0",
     "eslint-plugin-ava": "^12.0.0",
     "eslint-plugin-hildjj": "link:rules",
+    "eslint-plugin-jsdoc": "^36.0.6",
+    "eslint-plugin-markdown": "^2.2.0",
     "eslint-plugin-node": "^11.1.0"
   },
   "engines": {

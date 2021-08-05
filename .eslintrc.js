@@ -5,6 +5,6 @@ module.exports = {
   plugins: ['hildjj'],
   rules: {
     // eslint-disable-next-line hildjj/sort-rules
-    'hildjj/sort-rules': 'error'
-  }
+    'hildjj/sort-rules': 'error',
+  },
 }

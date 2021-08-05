@@ -15,7 +15,7 @@
 
 module.exports = {
   plugins: [
-    'ava'
+    'ava',
   ],
   rules: {
     'ava/assertion-arguments': 'error',
@@ -39,6 +39,6 @@ module.exports = {
     'ava/use-t-throws-async-well': 'error',
     'ava/use-t-well': 'error',
     'ava/use-t': 'error',
-    'ava/use-test': 'error'
-  }
+    'ava/use-test': 'error',
+  },
 }
