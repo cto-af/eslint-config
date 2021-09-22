@@ -42,7 +42,7 @@ module.exports = {
     'no-ex-assign': 'error',
     'no-extra-boolean-cast': 'error',
     // I disagree with this one.  Use lots of parens to make things clear.
-    // 'no-extra-parens': 'error',
+    'no-extra-parens': 'off',
     'no-extra-semi': 'error',
     'no-func-assign': 'error',
     'no-import-assign': 'error',
@@ -72,7 +72,7 @@ module.exports = {
     'node/no-extraneous-require': 'error',
     'node/no-missing-import': 'error',
     // This one doesn't work yet:
-    // 'node/no-missing-require': 'error',
+    'node/no-missing-require': 'off',
     'node/no-new-require': 'error',
     'node/no-path-concat': 'error',
     // No.
@@ -96,11 +96,11 @@ module.exports = {
     'block-scoped-var': 'error',
     'class-methods-use-this': 'warn',
     // This one is pedantic even for me.
-    // complexity: 'warn',
+    complexity: 'off',
     'consistent-return': 'error',
     curly: ['error', 'multi-line'],
     // I use exhastive cases a lot, which makes the default unreachable
-    // 'default-case': 'error',
+    'default-case': 'off',
     'default-case-last': 'error',
     'default-param-last': 'error',
     'dot-location': ['error', 'property'],
@@ -117,7 +117,7 @@ module.exports = {
     'no-empty-function': 'error',
     'no-empty-pattern': 'error',
     // I disagree with this one.
-    // 'no-eq-null': 'error',
+    'no-eq-null': 'off',
     'no-eval': 'error',
     'no-extend-native': 'error',
     'no-extra-bind': 'error',
@@ -134,7 +134,7 @@ module.exports = {
     'no-lone-blocks': 'error',
     'no-loop-func': 'error',
     // No shot at this for node-cbor.  For other projects, yes.
-    // 'no-magic-numbers': 'error',
+    'no-magic-numbers': 'off',
     'no-multi-spaces': 'error',
     'no-multi-str': 'error',
     'no-new': 'error',
@@ -144,7 +144,7 @@ module.exports = {
     'no-octal': 'error',
     'no-octal-escape': 'warn',
     // I do this all the time.
-    // 'no-param-reassign': 'error',
+    'no-param-reassign': 'off',
     'no-proto': 'error',
     'no-redeclare': 'error',
     'no-restricted-properties': 'error',
@@ -156,7 +156,7 @@ module.exports = {
     'no-sequences': 'error',
     'no-throw-literal': 'error',
     'no-unmodified-loop-condition': 'error',
-    'no-unused-expressions': ['error', { allowShortCircuit: true }],
+    'no-unused-expressions': ['error', {allowShortCircuit: true}],
     'no-unused-labels': 'error',
     'no-useless-call': 'error',
     'no-useless-catch': 'error',
@@ -165,7 +165,7 @@ module.exports = {
     'no-useless-return': 'error',
     'no-void': 'error',
     // Only turn this on periodically
-    // 'no-warning-comments': 'warn',
+    'no-warning-comments': 'off',
     'no-with': 'error',
     'node/no-deprecated-api': 'error',
     'prefer-named-capture-group': 'error',
@@ -174,7 +174,7 @@ module.exports = {
     radix: 'error',
     'require-await': 'error',
     // No.
-    // 'require-unicode-regexp': 'error',
+    'require-unicode-regexp': 'off',
     'vars-on-top': 'error',
     'wrap-iife': 'error',
     yoda: ['error', 'never', {exceptRange: true}],
@@ -192,7 +192,7 @@ module.exports = {
     'no-undef': 'error',
     'no-undef-init': 'error',
     // No.
-    // 'no-undefined': 'error',
+    'no-undefined': 'off',
     'no-unused-vars': [
       'error', {
         args: 'none',
@@ -209,7 +209,7 @@ module.exports = {
     'block-spacing': ['error', 'always'],
     'brace-style': ['error', '1tbs'],
     // If I had started with this, maybe
-    // camelcase: 'error',
+    camelcase: 'off',
     'capitalized-comments': ['error', 'always', {
       ignoreConsecutiveComments: true,
     }],
@@ -224,7 +224,7 @@ module.exports = {
     'comma-style': ['error', 'last'],
     'computed-property-spacing': 'error',
     // Not needed anymore with =>
-    // 'consistent-this': 'error',
+    'consistent-this': 'off',
     'eol-last': 'error',
     'func-call-spacing': 'error',
     'func-name-matching': 'error',
@@ -240,7 +240,7 @@ module.exports = {
     indent: ['error', 2, {SwitchCase: 1}],
 
     'jsdoc/require-jsdoc': ['error', {
-      publicOnly: { ancestorsOnly: true },
+      publicOnly: {ancestorsOnly: true},
     }],
 
     // Not needed
@@ -248,7 +248,7 @@ module.exports = {
     'key-spacing': 'error',
     'keyword-spacing': 'error',
     // I'm all over the place on these
-    // 'line-comment-position': 'error',
+    'line-comment-position': 'off',
     'linebreak-style': 'error',
     'lines-around-comment': ['error', {
       allowBlockStart: true,
@@ -256,7 +256,7 @@ module.exports = {
     }],
     'lines-between-class-members': 'error',
     // No.
-    // max-depth
+    'max-depth': 'off',
     'max-len': ['error', 80, {
       ignoreStrings: true,
       ignoreTemplateLiterals: true,
@@ -299,11 +299,11 @@ module.exports = {
     'no-unneeded-ternary': 'error',
     'no-whitespace-before-property': 'error',
     // No
-    // 'node/callback-return': 'error',
-    // 'node/exports-style': 'error',
+    'node/callback-return': 'off',
+    'node/exports-style': 'off',
     // Doesn't work for `import 'regenerator-runtime/runtime'`
-    // 'node/file-extension-in-import': 'error',
-    // 'node/global-require': 'error',
+    'node/file-extension-in-import': 'off',
+    'node/global-require': 'off',
     'node/no-mixed-requires': 'error',
     // No
     // node/no-process-env
@@ -324,7 +324,7 @@ module.exports = {
 
     'nonblock-statement-body-position': 'error',
     'object-curly-newline': 'error',
-    'object-curly-spacing': 'off',
+    'object-curly-spacing': ['error', 'never'],
     'object-property-newline': ['error', {allowAllPropertiesOnSameLine: true}],
     'one-var': ['error', 'never'],
     'one-var-declaration-per-line': 'error',
@@ -345,7 +345,7 @@ module.exports = {
     'space-before-blocks': 'error',
     'space-before-function-paren': ['error', 'never'],
     'space-in-parens': 'error',
-    'space-infix-ops': ['error', { int32Hint: false }],
+    'space-infix-ops': ['error', {int32Hint: false}],
     'space-unary-ops': 'error',
     'spaced-comment': ['error', 'always'],
     'switch-colon-spacing': 'error',
@@ -372,7 +372,7 @@ module.exports = {
     'no-this-before-super': 'error',
     'no-useless-computed-key': 'error',
     // I like useless constructors
-    // 'no-useless-constructor': 'error',
+    'no-useless-constructor': 'off',
     'no-useless-rename': 'error',
     'no-var': 'error',
     'object-shorthand': 'error',
@@ -408,19 +408,19 @@ module.exports = {
     'jsdoc/multiline-blocks': 'error',
     'jsdoc/newline-after-description': 'error',
     'jsdoc/no-bad-blocks': 'error',
-    // 'jsdoc/no-defaults': 'error',
-    // 'jsdoc/no-missing-syntax': 'error',
+    'jsdoc/no-defaults': 'off',
+    'jsdoc/no-missing-syntax': 'off',
     'jsdoc/no-multi-asterisks': 'error',
-    // 'jsdoc/no-restricted-syntax': 'error',
-    // 'jsdoc/no-types': 'error',
+    'jsdoc/no-restricted-syntax': 'off',
+    'jsdoc/no-types': 'off',
     'jsdoc/no-undefined-types': 'error',
     'jsdoc/require-asterisk-prefix': 'error',
-    'jsdoc/require-description': ['error', { exemptedBy: ['inheritdoc', 'private', 'ignore']}],
+    'jsdoc/require-description': ['error', {exemptedBy: ['inheritdoc', 'private', 'ignore']}],
     'jsdoc/require-description-complete-sentence': 'error',
-    // 'jsdoc/require-example': 'error',
-    // 'jsdoc/require-file-overview': 'error',
+    'jsdoc/require-example': 'off',
+    'jsdoc/require-file-overview': 'off',
     'jsdoc/require-hyphen-before-param-description': ['error', 'never'],
-    'jsdoc/require-param': ['error', { exemptedBy: ['inheritdoc', 'private', 'ignore']}],
+    'jsdoc/require-param': ['error', {exemptedBy: ['inheritdoc', 'private', 'ignore']}],
     'jsdoc/require-param-description': 'error',
     'jsdoc/require-param-name': 'error',
     'jsdoc/require-param-type': 'error',
@@ -443,7 +443,7 @@ module.exports = {
   overrides: [
     {
       files: ['*.mjs'],
-      parserOptions: { sourceType: 'module' },
+      parserOptions: {sourceType: 'module'},
       rules: {
         // [Possible Errors](https://eslint.org/docs/rules/#possible-errors)
         'node/no-unsupported-features/es-syntax': [
