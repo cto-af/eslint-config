@@ -190,7 +190,7 @@ module.exports = {
     'no-shadow': 'error',
     'no-shadow-restricted-names': 'error',
     'no-undef': 'error',
-    'no-undef-init': 'error',
+    'no-undef-init': 'off', // Turns out I need this often enough
     // No.
     'no-undefined': 'off',
     'no-unused-vars': [
