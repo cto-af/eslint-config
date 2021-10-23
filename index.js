@@ -212,6 +212,7 @@ module.exports = {
     camelcase: 'off',
     'capitalized-comments': ['error', 'always', {
       ignoreConsecutiveComments: true,
+      ignorePattern: 'c8',
     }],
     'comma-dangle': ['error', {
       arrays: 'always-multiline',
@@ -392,7 +393,8 @@ module.exports = {
 
     'jsdoc/check-access': 'error',
     'jsdoc/check-alignment': 'error',
-    'jsdoc/check-examples': 'error',
+    // https://github.com/eslint/eslint/issues/14745
+    'jsdoc/check-examples': 'off',
     // Track https://github.com/gajus/eslint-plugin-jsdoc/issues/715
     // 'jsdoc/check-indentation': 'error',
     'jsdoc/check-line-alignment': 'error',
