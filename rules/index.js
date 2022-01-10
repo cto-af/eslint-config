@@ -1,9 +1,25 @@
 // eslint-disable hildjj/sort-rules
 'use strict'
-const {CLIEngine} = require('eslint')
+const {builtinRules} = require('eslint/use-at-your-own-risk')
+const avaPlugin = require('eslint-plugin-ava')
+const nodePlugin = require('eslint-plugin-node')
+const jsdocPlugin = require('eslint-plugin-jsdoc')
 
-function getIndent(node, src) {
-  const [tok] = src.getTokens(node)
+function rename(rules, prefix) {
+  return Object.fromEntries(
+    Object.entries(rules).map(([k, v]) => [`${prefix}/${k}`, v])
+  )
+}
+
+const rules = {
+  ...Object.fromEntries(builtinRules.entries()),
+  ...rename(avaPlugin.rules, 'ava'),
+  ...rename(nodePlugin.rules, 'node'),
+  ...rename(jsdocPlugin.rules, 'jsdoc'),
+}
+
+function getIndent(n, src) {
+  const [tok] = src.getTokens(n)
   return src.text.slice(tok.range[0] - tok.loc.start.column, tok.range[0])
 }
 const meta = {
@@ -23,12 +39,6 @@ module.exports = {
     'sort-rules': {
       meta,
       create(context) {
-        const cli = new CLIEngine({
-          cwd: context.getCwd(),
-          // This is a hack.  Should read the plugins from the current file.
-          plugins: ['node', 'ava', 'jsdoc'],
-        })
-        const rules = cli.getRules()
         const src = context.getSourceCode()
         return {
           'ObjectExpression[parent.key.name="rules"]': node => {
@@ -48,7 +58,7 @@ module.exports = {
 
             for (const p of node.properties) {
               const key = p.key.name || p.key.value
-              const kr = rules.get(key)
+              const kr = rules[key]
               if (!kr) {
                 context.report({
                   message: 'Unknown rule "{{ key }}"',
