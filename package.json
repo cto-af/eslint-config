@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "eslint -c index.js *.js",
-    "lint": "eslint . --ext js --ext cjs --ext mjs"
+    "lint": "eslint . --ext js,cjs,mjs"
   },
   "keywords": [
     "lint"
@@ -14,20 +14,23 @@
   "license": "MIT",
   "repository": "hildjj/ctoaf-eslint-config",
   "peerDependencies": {
-    "eslint-plugin-ava": "^13.1.0",
-    "eslint-plugin-jsdoc": "^37.0.3",
+    "eslint-plugin-ava": "^13.2.0",
+    "eslint-plugin-jsdoc": "^37.6.1",
     "eslint-plugin-node": "^11.1.0"
   },
   "peerDependenciesMeta": {
     "eslint-plugin-ava": {
       "optional": true
+    },
+    "eslint-plugin-jsdoc": {
+      "optional": true
     }
   },
   "devDependencies": {
-    "eslint": "^8.2.0",
-    "eslint-plugin-ava": "^13.1.0",
+    "eslint": "^8.6.0",
+    "eslint-plugin-ava": "^13.2.0",
     "eslint-plugin-hildjj": "link:rules",
-    "eslint-plugin-jsdoc": "^37.0.3",
+    "eslint-plugin-jsdoc": "^37.6.1",
     "eslint-plugin-node": "^11.1.0"
   },
   "engines": {

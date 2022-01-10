@@ -7,9 +7,9 @@
   "author": "Joe Hildebrand <joe-github@cursive.net>",
   "license": "MIT",
   "devDependencies": {
-    "cheerio": "^1.0.0-rc.5",
-    "eslint": "^7.32.0",
-    "got": "^11.8.1"
+    "cheerio": "^1.0.0-rc.10",
+    "eslint": "^8.6.0",
+    "got": "^12.0.1"
   },
   "engines": {
     "node": ">=12.19"
