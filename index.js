@@ -337,7 +337,7 @@ module.exports = {
     'node/no-unsupported-features/es-syntax': 'error',
     'node/no-unsupported-features/node-builtins': 'error',
     'node/process-exit-as-throw': 'error',
-    'node/shebang': 'warn',
+    'node/shebang': 'off', // This always seems to be wrong
 
     // [Best Practices](https://github.com/mysticatea/eslint-plugin-node#best-practices)
     'node/no-deprecated-api': 'error',
