@@ -72,7 +72,6 @@ module.exports = {
     'no-unsafe-finally': 'error',
     'no-unsafe-negation': 'error',
     'no-unsafe-optional-chaining': 'error',
-    'no-unused-private-class-members': 'error',
     'no-unused-vars': [
       'error', {
         args: 'none',
