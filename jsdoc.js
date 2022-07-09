@@ -48,7 +48,7 @@ module.exports = {
     'jsdoc/no-multi-asterisks': 'error',
     'jsdoc/no-restricted-syntax': 'off',
     'jsdoc/no-types': 'off',
-    'jsdoc/no-undefined-types': 'error',
+    // 'jsdoc/no-undefined-types': 'error',  Doesn't seem to work anymore
     'jsdoc/require-asterisk-prefix': 'error',
     'jsdoc/require-description': ['error', {exemptedBy: ['inheritdoc', 'private', 'ignore']}],
     'jsdoc/require-description-complete-sentence': 'error',
