@@ -29,7 +29,7 @@ module.exports = {
     // https://github.com/eslint/eslint/issues/14745
     'jsdoc/check-examples': 'off',
     // Track https://github.com/gajus/eslint-plugin-jsdoc/issues/715
-    // 'jsdoc/check-indentation': 'error',
+    'jsdoc/check-indentation': 'off',
     'jsdoc/check-line-alignment': 'error',
     'jsdoc/check-param-names': 'error',
     'jsdoc/check-property-names': 'error',
@@ -40,6 +40,7 @@ module.exports = {
     'jsdoc/empty-tags': 'error',
     'jsdoc/implements-on-classes': 'error',
     'jsdoc/match-description': 'error',
+    'jsdoc/match-name': 'off',
     'jsdoc/multiline-blocks': 'error',
     'jsdoc/newline-after-description': 'error',
     'jsdoc/no-bad-blocks': 'error',
@@ -72,6 +73,7 @@ module.exports = {
     'jsdoc/require-throws': 'error',
     'jsdoc/require-yields': 'error',
     'jsdoc/require-yields-check': 'error',
+    'jsdoc/sort-tags': 'error',
     'jsdoc/tag-lines': 'error',
     'jsdoc/valid-types': 'error',
   },

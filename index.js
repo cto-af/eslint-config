@@ -33,6 +33,7 @@ module.exports = {
     'no-compare-neg-zero': 'error',
     'no-cond-assign': 'error',
     'no-const-assign': 'error',
+    'no-constant-binary-expression': 'error',
     'no-constant-condition': 'error',
     'no-constructor-return': 'error',
     'no-control-regex': 'error',
@@ -72,6 +73,7 @@ module.exports = {
     'no-unsafe-finally': 'error',
     'no-unsafe-negation': 'error',
     'no-unsafe-optional-chaining': 'error',
+    'no-unused-private-class-members': 'error',
     'no-unused-vars': [
       'error', {
         args: 'none',
@@ -349,21 +351,22 @@ module.exports = {
     'node/global-require': 'off',
     'node/no-mixed-requires': 'error',
     // No
-    // node/no-process-env
-    // node/no-restricted-import
-    // node/no-restricted-require
-    // node/no-sync
+    'node/no-process-env': 'off',
+    'node/no-restricted-import': 'off',
+    'node/no-restricted-require': 'off',
+    'node/no-sync': 'off',
+
     'node/prefer-global/buffer': ['error', 'never'],
     // Hopefully only used in tests and cli
-    // node/prefer-global/console
-    // node/prefer-global/process
+    'node/prefer-global/console': 'off',
+    'node/prefer-global/process': 'off',
     'node/prefer-global/text-decoder': ['error', 'always'],
     'node/prefer-global/text-encoder': ['error', 'always'],
     'node/prefer-global/url': ['error', 'always'],
     'node/prefer-global/url-search-params': ['error', 'always'],
     // Not yet
-    // node/prefer-promises/dns
-    // node/prefer-promises/fs
+    'node/prefer-promises/dns': 'off',
+    'node/prefer-promises/fs': 'off',
   },
   overrides: [
     {
