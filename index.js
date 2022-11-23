@@ -55,6 +55,7 @@ module.exports = {
     'no-irregular-whitespace': 'error',
     'no-loss-of-precision': 'error',
     'no-misleading-character-class': 'error',
+    'no-new-native-nonconstructor': 'error',
     'no-new-symbol': 'error',
     'no-obj-calls': 'error',
     'no-promise-executor-return': 'error',
@@ -117,6 +118,7 @@ module.exports = {
     'id-length': 'off', // Not needed
     'id-match': 'off', // Not needed
     'init-declarations': 'error',
+    'logical-assignment-operators': ['error', 'never'],
     'max-classes-per-file': 'off', // No.
     'max-depth': 'off', // No.
     'max-lines': 'off', // No.
@@ -139,6 +141,7 @@ module.exports = {
     'no-else-return': 'error',
     'no-empty': 'error',
     'no-empty-function': 'error',
+    'no-empty-static-block': 'error',
     'no-eq-null': 'off', // I disagree with this one.
     'no-eval': 'error',
     'no-extend-native': 'error',
