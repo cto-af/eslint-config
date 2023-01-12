@@ -4,6 +4,7 @@ const {builtinRules} = require('eslint/use-at-your-own-risk')
 const avaPlugin = require('eslint-plugin-ava')
 const nodePlugin = require('eslint-plugin-node')
 const jsdocPlugin = require('eslint-plugin-jsdoc')
+const tsPlugin = require('@typescript-eslint/eslint-plugin')
 
 function rename(rules, prefix) {
   return Object.fromEntries(
@@ -16,6 +17,7 @@ const rules = {
   ...rename(avaPlugin.rules, 'ava'),
   ...rename(nodePlugin.rules, 'node'),
   ...rename(jsdocPlugin.rules, 'jsdoc'),
+  ...rename(tsPlugin.rules, '@typescript-eslint'),
 }
 
 function getIndent(n, src) {

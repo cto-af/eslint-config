@@ -19,7 +19,7 @@ module.exports = {
   },
   reportUnusedDisableDirectives: true,
   rules: {
-    // Last updated 2022-02-10, v8.6.0
+    // Last updated 2022-01-12, v8.31.0
     // eslint-plugin-node 11.1.0
 
     // [Possible Problems](https://eslint.org/docs/rules/#possible-problems)
@@ -118,7 +118,7 @@ module.exports = {
     'id-length': 'off', // Not needed
     'id-match': 'off', // Not needed
     'init-declarations': 'error',
-    'logical-assignment-operators': ['error', 'never'],
+    'logical-assignment-operators': 'off', // No.
     'max-classes-per-file': 'off', // No.
     'max-depth': 'off', // No.
     'max-lines': 'off', // No.
