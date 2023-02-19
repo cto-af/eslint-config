@@ -44,6 +44,7 @@ module.exports = {
     }],
     '@typescript-eslint/ban-tslint-comment': 'error',
     '@typescript-eslint/ban-types': 'off', // Not needed
+    '@typescript-eslint/block-spacing': 'error',
     'brace-style': 'off',
     '@typescript-eslint/brace-style': ['error', '1tbs', {
       allowSingleLine: true,
@@ -90,6 +91,7 @@ module.exports = {
     '@typescript-eslint/func-call-spacing': 'error',
     '@typescript-eslint/indent': ['off', 2], // Broken, see https://github.com/typescript-eslint/typescript-eslint/issues/1824
     '@typescript-eslint/init-declarations': 'error',
+    '@typescript-eslint/key-spacing': ['error', {mode: 'minimum'}],
     '@typescript-eslint/keyword-spacing': 'error',
     '@typescript-eslint/lines-between-class-members': 'error',
     '@typescript-eslint/member-delimiter-style': 'error',
@@ -116,6 +118,7 @@ module.exports = {
     '@typescript-eslint/no-floating-promises': 'off', // Can't config
     '@typescript-eslint/no-for-in-array': 'error',
     '@typescript-eslint/no-implied-eval': 'off', // Can't config
+    '@typescript-eslint/no-import-type-side-effects': 'error',
     '@typescript-eslint/no-inferrable-types': 'error',
     '@typescript-eslint/no-invalid-this': 'error',
     '@typescript-eslint/no-invalid-void-type': 'error',
