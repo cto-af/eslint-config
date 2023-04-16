@@ -18,9 +18,9 @@
     "@typescript-eslint/eslint-plugin": "~5",
     "@typescript-eslint/parser": "~5",
     "eslint-plugin-ava": "~14",
-    "eslint-plugin-jsdoc": "~40",
+    "eslint-plugin-jsdoc": "~41",
     "eslint-plugin-node": "~11",
-    "typescript": "~4"
+    "typescript": "~5"
   },
   "peerDependenciesMeta": {
     "@typescript-eslint/eslint-plugin": {
@@ -40,15 +40,15 @@
     }
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "5.52.0",
-    "@typescript-eslint/parser": "5.52.0",
-    "eslint": "^8.34.0",
+    "@typescript-eslint/eslint-plugin": "5.58.0",
+    "@typescript-eslint/parser": "5.58.0",
+    "eslint": "^8.38.0",
     "eslint-find-rules": "4.1.0",
     "eslint-plugin-ava": "^14.0.0",
     "eslint-plugin-hildjj": "link:rules",
-    "eslint-plugin-jsdoc": "^40.0.0",
+    "eslint-plugin-jsdoc": "^41.1.1",
     "eslint-plugin-node": "^11.1.0",
-    "typescript": "4.9.5"
+    "typescript": "5.0.4"
   },
   "engines": {
     "node": ">=14"
