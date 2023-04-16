@@ -39,11 +39,13 @@ module.exports = {
     'jsdoc/check-values': 'error',
     'jsdoc/empty-tags': 'error',
     'jsdoc/implements-on-classes': 'error',
+    'jsdoc/informative-docs': 'off', // This sounds annoying
     'jsdoc/match-description': 'error',
     'jsdoc/match-name': 'off',
     'jsdoc/multiline-blocks': 'error',
     'jsdoc/newline-after-description': 'error',
     'jsdoc/no-bad-blocks': 'error',
+    'jsdoc/no-blank-block-descriptions': 'off', // Not really documented yet
     'jsdoc/no-defaults': 'off',
     'jsdoc/no-missing-syntax': 'off',
     'jsdoc/no-multi-asterisks': 'error',

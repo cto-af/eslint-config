@@ -93,6 +93,7 @@ module.exports = {
     '@typescript-eslint/init-declarations': 'error',
     '@typescript-eslint/key-spacing': ['error', {mode: 'minimum'}],
     '@typescript-eslint/keyword-spacing': 'error',
+    '@typescript-eslint/lines-around-comment': 'off', // Maybe later
     '@typescript-eslint/lines-between-class-members': 'error',
     '@typescript-eslint/member-delimiter-style': 'error',
     '@typescript-eslint/member-ordering': 'error',
@@ -105,6 +106,7 @@ module.exports = {
     '@typescript-eslint/no-confusing-void-expression': 'off', // Can't config
     '@typescript-eslint/no-dupe-class-members': 'error',
     '@typescript-eslint/no-duplicate-enum-values': 'error',
+    '@typescript-eslint/no-duplicate-type-constituents': 'error',
     '@typescript-eslint/no-dynamic-delete': 'error',
     'no-empty-function': 'off',
     '@typescript-eslint/no-empty-function': 'error',
@@ -129,6 +131,7 @@ module.exports = {
     '@typescript-eslint/no-meaningless-void-operator': 'off', // Can't config
     '@typescript-eslint/no-misused-new': 'error',
     '@typescript-eslint/no-misused-promises': 'off', // Can't config
+    '@typescript-eslint/no-mixed-enums': 'error',
     '@typescript-eslint/no-namespace': 'error',
     '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
     '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
@@ -151,6 +154,7 @@ module.exports = {
     '@typescript-eslint/no-unsafe-assignment': 'off', // Can't config
     '@typescript-eslint/no-unsafe-call': 'off', // Can't config
     '@typescript-eslint/no-unsafe-declaration-merging': 'error',
+    '@typescript-eslint/no-unsafe-enum-comparison': 'error',
     '@typescript-eslint/no-unsafe-member-access': 'off', // Can't config
     '@typescript-eslint/no-unsafe-return': 'off', // Can't config
     '@typescript-eslint/no-unused-expressions': 'error',
