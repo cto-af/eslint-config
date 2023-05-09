@@ -45,6 +45,7 @@ module.exports = {
     'jsdoc/multiline-blocks': 'error',
     'jsdoc/newline-after-description': 'error',
     'jsdoc/no-bad-blocks': 'error',
+    // 'jsdoc/no-blank-blocks': 'error', // Not in metadata yet
     'jsdoc/no-blank-block-descriptions': 'off', // Not really documented yet
     'jsdoc/no-defaults': 'off',
     'jsdoc/no-missing-syntax': 'off',

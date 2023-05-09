@@ -4,7 +4,7 @@ module.exports = {
   env: {
     node: true,
     es6: true,
-    es2020: true,
+    es2021: true,
   },
   plugins: [
     'node',
@@ -305,7 +305,7 @@ module.exports = {
     'operator-linebreak': ['error', 'after'],
     'padded-blocks': ['error', 'never'],
     'padding-line-between-statements': 'error',
-    'quotes': ['error', 'single'],
+    'quotes': ['error', 'single', {avoidEscape: true}],
     'rest-spread-spacing': ['error', 'never'],
     'semi': ['error', 'never'],
     'semi-spacing': 'error',
@@ -329,7 +329,9 @@ module.exports = {
     'node/no-exports-assign': 'error',
     'node/no-extraneous-import': 'error',
     'node/no-extraneous-require': 'error',
-    'node/no-missing-import': 'error',
+    'node/no-missing-import': ['error', {
+      allowModules: ['ava'], // Ava uses fancy new stuff, so shows up unavailable.
+    }],
     'node/no-missing-require': 'off', // This one doesn't work yet:
     'node/no-new-require': 'error',
     'node/no-path-concat': 'error',

@@ -22,7 +22,7 @@ module.exports = {
         'node/no-unsupported-features/es-syntax': [
           'error',
           {
-            version: '>=14',
+            version: '>=16',
             ignores: ['modules'],
           },
         ],
