@@ -30,7 +30,9 @@ module.exports = {
     'jsdoc/check-examples': 'off',
     // Track https://github.com/gajus/eslint-plugin-jsdoc/issues/715
     'jsdoc/check-indentation': 'off',
-    'jsdoc/check-line-alignment': 'error',
+    'jsdoc/check-line-alignment': ['error', 'never', {
+      wrapIndent: '  ',
+    }],
     'jsdoc/check-param-names': 'error',
     'jsdoc/check-property-names': 'error',
     'jsdoc/check-syntax': 'error',
@@ -51,7 +53,7 @@ module.exports = {
     'jsdoc/no-multi-asterisks': 'error',
     'jsdoc/no-restricted-syntax': 'off',
     'jsdoc/no-types': 'off',
-    'jsdoc/no-undefined-types': 'error',
+    'jsdoc/no-undefined-types': 'off', // Use typedoc
     'jsdoc/require-asterisk-prefix': 'error',
     'jsdoc/require-description': ['error', {exemptedBy: ['inheritdoc', 'private', 'ignore']}],
     'jsdoc/require-description-complete-sentence': 'error',
@@ -76,8 +78,8 @@ module.exports = {
     'jsdoc/require-yields': 'error',
     'jsdoc/require-yields-check': 'error',
     'jsdoc/sort-tags': 'error',
-    'jsdoc/tag-lines': 'error',
-    'jsdoc/text-escaping': 'error',
+    'jsdoc/tag-lines': 'off',
+    'jsdoc/text-escaping': 'off', // Painful
     'jsdoc/valid-types': 'error',
   },
 }
