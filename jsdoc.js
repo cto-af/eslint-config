@@ -28,7 +28,6 @@ module.exports = {
     'jsdoc/check-alignment': 'error',
     // https://github.com/eslint/eslint/issues/14745
     'jsdoc/check-examples': 'off',
-    // Track https://github.com/gajus/eslint-plugin-jsdoc/issues/715
     'jsdoc/check-indentation': 'off',
     'jsdoc/check-line-alignment': ['error', 'never', {
       wrapIndent: '  ',
@@ -41,6 +40,7 @@ module.exports = {
     'jsdoc/check-values': 'error',
     'jsdoc/empty-tags': 'error',
     'jsdoc/implements-on-classes': 'error',
+    'jsdoc/imports-as-dependencies': 'error',
     'jsdoc/informative-docs': 'off', // This sounds annoying
     'jsdoc/match-description': 'error',
     'jsdoc/match-name': 'off',
