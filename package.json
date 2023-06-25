@@ -18,7 +18,7 @@
     "@typescript-eslint/eslint-plugin": "~5",
     "@typescript-eslint/parser": "~5",
     "eslint-plugin-ava": "~14",
-    "eslint-plugin-jsdoc": "~44",
+    "eslint-plugin-jsdoc": "~46",
     "eslint-plugin-n": "~16",
     "typescript": "~5"
   },
