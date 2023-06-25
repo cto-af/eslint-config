@@ -19,7 +19,7 @@ module.exports = {
       },
       rules: {
         // [Possible Errors](https://eslint.org/docs/rules/#possible-errors)
-        'node/no-unsupported-features/es-syntax': [
+        'n/no-unsupported-features/es-syntax': [
           'error',
           {
             version: '>=16',

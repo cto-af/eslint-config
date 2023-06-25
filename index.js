@@ -7,7 +7,7 @@ module.exports = {
     es2021: true,
   },
   plugins: [
-    'node',
+    'n',
   ],
   ignorePatterns: [
     'coverage/',
@@ -324,54 +324,54 @@ module.exports = {
     'yield-star-spacing': ['error', 'before'],
 
     // [Possible Errors](https://github.com/mysticatea/eslint-plugin-node#possible-errors)
-    'node/handle-callback-err': ['error', 'er'],
-    'node/no-callback-literal': 'error',
-    'node/no-exports-assign': 'error',
-    'node/no-extraneous-import': 'error',
-    'node/no-extraneous-require': 'error',
-    'node/no-missing-import': ['error', {
+    'n/handle-callback-err': ['error', 'er'],
+    'n/no-callback-literal': 'error',
+    'n/no-exports-assign': 'error',
+    'n/no-extraneous-import': 'error',
+    'n/no-extraneous-require': 'error',
+    'n/no-missing-import': ['error', {
       allowModules: ['ava'], // Ava uses fancy new stuff, so shows up unavailable.
     }],
-    'node/no-missing-require': 'off', // This one doesn't work yet:
-    'node/no-new-require': 'error',
-    'node/no-path-concat': 'error',
-    'node/no-process-exit': 'off', // No.
-    'node/no-unpublished-bin': 'error',
-    'node/no-unpublished-import': 'off', // Doesn't work
-    'node/no-unpublished-require': 'off', // Doesn't work
-    'node/no-unsupported-features/es-builtins': 'error',
-    'node/no-unsupported-features/es-syntax': 'error',
-    'node/no-unsupported-features/node-builtins': 'error',
-    'node/process-exit-as-throw': 'error',
-    'node/shebang': 'off', // This always seems to be wrong
+    'n/no-missing-require': 'off', // This one doesn't work yet:
+    'n/no-new-require': 'error',
+    'n/no-path-concat': 'error',
+    'n/no-process-exit': 'off', // No.
+    'n/no-unpublished-bin': 'error',
+    'n/no-unpublished-import': 'off', // Doesn't work
+    'n/no-unpublished-require': 'off', // Doesn't work
+    'n/no-unsupported-features/es-builtins': 'error',
+    'n/no-unsupported-features/es-syntax': 'error',
+    'n/no-unsupported-features/node-builtins': 'error',
+    'n/process-exit-as-throw': 'error',
+    'n/shebang': 'off', // This always seems to be wrong
 
     // [Best Practices](https://github.com/mysticatea/eslint-plugin-node#best-practices)
-    'node/no-deprecated-api': 'error',
+    'n/no-deprecated-api': 'error',
 
     // [Stylistic Issues](https://github.com/mysticatea/eslint-plugin-node#stylistic-issues)
-    'node/callback-return': 'off', // No
-    'node/exports-style': 'off',
+    'n/callback-return': 'off', // No
+    'n/exports-style': 'off',
     // Doesn't work for `import 'regenerator-runtime/runtime'`
-    'node/file-extension-in-import': 'error',
-    'node/global-require': 'off',
-    'node/no-mixed-requires': 'error',
+    'n/file-extension-in-import': 'error',
+    'n/global-require': 'off',
+    'n/no-mixed-requires': 'error',
     // No
-    'node/no-process-env': 'off',
-    'node/no-restricted-import': 'off',
-    'node/no-restricted-require': 'off',
-    'node/no-sync': 'off',
+    'n/no-process-env': 'off',
+    'n/no-restricted-import': 'off',
+    'n/no-restricted-require': 'off',
+    'n/no-sync': 'off',
 
-    'node/prefer-global/buffer': ['error', 'never'],
+    'n/prefer-global/buffer': ['error', 'never'],
     // Hopefully only used in tests and cli
-    'node/prefer-global/console': 'off',
-    'node/prefer-global/process': 'off',
-    'node/prefer-global/text-decoder': ['error', 'always'],
-    'node/prefer-global/text-encoder': ['error', 'always'],
-    'node/prefer-global/url': ['error', 'always'],
-    'node/prefer-global/url-search-params': ['error', 'always'],
+    'n/prefer-global/console': 'off',
+    'n/prefer-global/process': 'off',
+    'n/prefer-global/text-decoder': ['error', 'always'],
+    'n/prefer-global/text-encoder': ['error', 'always'],
+    'n/prefer-global/url': ['error', 'always'],
+    'n/prefer-global/url-search-params': ['error', 'always'],
     // Not yet
-    'node/prefer-promises/dns': 'off',
-    'node/prefer-promises/fs': 'off',
+    'n/prefer-promises/dns': 'off',
+    'n/prefer-promises/fs': 'off',
   },
   overrides: [
     {
@@ -379,7 +379,7 @@ module.exports = {
       parserOptions: {sourceType: 'module'},
       rules: {
         // [Possible Errors](https://eslint.org/docs/rules/#possible-errors)
-        'node/no-unsupported-features/es-syntax': [
+        'n/no-unsupported-features/es-syntax': [
           'error',
           {
             version: '>=12.19',
