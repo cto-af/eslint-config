@@ -2,7 +2,7 @@
 'use strict'
 const {builtinRules} = require('eslint/use-at-your-own-risk')
 const avaPlugin = require('eslint-plugin-ava')
-const nodePlugin = require('eslint-plugin-node')
+const nodePlugin = require('eslint-plugin-n')
 const jsdocPlugin = require('eslint-plugin-jsdoc')
 const tsPlugin = require('@typescript-eslint/eslint-plugin')
 
@@ -15,7 +15,7 @@ function rename(rules, prefix) {
 const rules = {
   ...Object.fromEntries(builtinRules.entries()),
   ...rename(avaPlugin.rules, 'ava'),
-  ...rename(nodePlugin.rules, 'node'),
+  ...rename(nodePlugin.rules, 'n'),
   ...rename(jsdocPlugin.rules, 'jsdoc'),
   ...rename(tsPlugin.rules, '@typescript-eslint'),
 }
