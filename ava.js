@@ -52,5 +52,6 @@ module.exports = {
       // way that esplugin-n finds depedencies.
       allowModules: ['ava'],
     }],
+    'n/no-extraneous-require': ['error', {allowModules: ['ava']}],
   },
 }
