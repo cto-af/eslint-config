@@ -45,5 +45,12 @@ module.exports = {
     'ava/use-t': 'error',
     'ava/use-test': 'error',
     'ava/use-true-false': 'off',
+
+    // [Possible Errors](https://github.com/eslint-community/eslint-plugin-n#possible-errors)
+    'n/no-extraneous-import': ['error', {
+      // This is an extraneous error because of the way ava is built and the
+      // way that esplugin-n finds depedencies.
+      allowModules: ['ava'],
+    }],
   },
 }
