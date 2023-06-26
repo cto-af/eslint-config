@@ -19,8 +19,8 @@ module.exports = {
   },
   reportUnusedDisableDirectives: true,
   rules: {
-    // Last updated 2022-01-12, v8.31.0
-    // eslint-plugin-node 11.1.0
+    // Last updated 2023-06-26, v8.43.0
+    // eslint-plugin-n 16.0.1
 
     // [Possible Problems](https://eslint.org/docs/rules/#possible-problems)
     'array-callback-return': ['error', {allowImplicit: true}],
@@ -323,7 +323,7 @@ module.exports = {
     'wrap-regex': 'off', // No.
     'yield-star-spacing': ['error', 'before'],
 
-    // [Possible Errors](https://github.com/mysticatea/eslint-plugin-node#possible-errors)
+    // [Possible Errors](https://github.com/eslint-community/eslint-plugin-n#possible-errors)
     'n/handle-callback-err': ['error', 'er'],
     'n/no-callback-literal': 'error',
     'n/no-exports-assign': 'error',
@@ -345,10 +345,10 @@ module.exports = {
     'n/process-exit-as-throw': 'error',
     'n/shebang': 'off', // This always seems to be wrong
 
-    // [Best Practices](https://github.com/mysticatea/eslint-plugin-node#best-practices)
+    // [Best Practices](https://github.com/eslint-community/eslint-plugin-n#best-practices)
     'n/no-deprecated-api': 'error',
 
-    // [Stylistic Issues](https://github.com/mysticatea/eslint-plugin-node#stylistic-issues)
+    // [Stylistic Issues](https://github.com/eslint-community/eslint-plugin-n#stylistic-issues)
     'n/callback-return': 'off', // No
     'n/exports-style': 'off',
     // Doesn't work for `import 'regenerator-runtime/runtime'`
