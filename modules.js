@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Use this in type="modules" projects
 
@@ -29,4 +29,4 @@ module.exports = {
       },
     },
   ],
-}
+};

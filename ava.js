@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Intended to be used in the `test` subdir, with:
 //
@@ -54,4 +54,4 @@ module.exports = {
     }],
     'n/no-extraneous-require': ['error', {allowModules: ['ava']}],
   },
-}
+};

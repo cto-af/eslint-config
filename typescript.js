@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 // Use this in typescript projects
 
 // module.exports = {
@@ -14,4 +14,4 @@ module.exports = {
       ],
     },
   ],
-}
+};
