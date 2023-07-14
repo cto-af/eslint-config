@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Use when you're going to generate docs with JSDoc.
 
@@ -82,4 +82,4 @@ module.exports = {
     'jsdoc/text-escaping': 'off', // Painful
     'jsdoc/valid-types': 'error',
   },
-}
+};

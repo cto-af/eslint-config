@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Last updated 2023-01-12
 // "@typescript-eslint/eslint-plugin": "5.37.0"
@@ -143,7 +143,6 @@ module.exports = {
     '@typescript-eslint/no-shadow': 'error',
     '@typescript-eslint/no-this-alias': 'error',
     '@typescript-eslint/no-throw-literal': 'off', // Can't config
-    '@typescript-eslint/no-type-alias': 'off', // Not important
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'off', // Can't config
     '@typescript-eslint/no-unnecessary-condition': 'off', // Can't config
     '@typescript-eslint/no-unnecessary-qualifier': 'off', // Can't config
@@ -215,4 +214,4 @@ module.exports = {
     '@typescript-eslint/unbound-method': 'off', // Can't config
     '@typescript-eslint/unified-signatures': 'off', // Too hard
   },
-}
+};

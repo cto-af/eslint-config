@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = {
   env: {
@@ -78,8 +78,10 @@ module.exports = {
     'no-unused-vars': [
       'error', {
         args: 'none',
+        argsIgnorePattern: '^_',
         caughtErrors: 'all',
-        caughtErrorsIgnorePattern: '^ignore',
+        caughtErrorsIgnorePattern: '^(_|ignore)',
+        varsIgnorePattern: '^_',
       },
     ],
     'no-use-before-define': 'error',
@@ -307,9 +309,10 @@ module.exports = {
     'padding-line-between-statements': 'error',
     'quotes': ['error', 'single', {avoidEscape: true}],
     'rest-spread-spacing': ['error', 'never'],
-    'semi': ['error', 'never'],
+    // Massive breaking change.  I changed my mind.
+    'semi': ['error', 'always'],
     'semi-spacing': 'error',
-    'semi-style': ['error', 'first'],
+    'semi-style': ['error'],
     'space-before-blocks': 'error',
     'space-before-function-paren': ['error', 'never'],
     'space-in-parens': 'error',
@@ -389,4 +392,4 @@ module.exports = {
       },
     },
   ],
-}
+};
