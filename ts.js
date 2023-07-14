@@ -199,7 +199,7 @@ module.exports = {
     '@typescript-eslint/restrict-template-expressions': 'off', // Can't config
     '@typescript-eslint/return-await': 'off', // Can't config
     'semi': 'off',
-    '@typescript-eslint/semi': ['error', 'never'],
+    '@typescript-eslint/semi': ['error', 'always'],
     '@typescript-eslint/sort-type-constituents': 'error',
     '@typescript-eslint/space-before-blocks': 'error',
     'space-before-function-paren': 'off',
