@@ -173,9 +173,9 @@ module.exports = {
     'no-nested-ternary': 'error',
     'no-new': 'error',
     'no-new-func': 'error',
-    'no-new-object': 'error',
     'no-new-wrappers': 'warn',
     'no-nonoctal-decimal-escape': 'error',
+    'no-object-constructor': 'error',
     'no-octal': 'error',
     'no-octal-escape': 'warn',
     'no-param-reassign': 'off', // I do this all the time.
@@ -189,7 +189,6 @@ module.exports = {
     'no-restricted-properties': 'off', // Not needed
     'no-restricted-syntax': 'off', // Not needed
     'no-return-assign': 'error',
-    'no-return-await': 'error',
     'no-script-url': 'error',
     'no-sequences': 'error',
     'no-shadow': 'error',

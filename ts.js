@@ -50,6 +50,8 @@ module.exports = {
       allowSingleLine: true,
     }],
     '@typescript-eslint/class-literal-property-style': ['error', 'getters'],
+    'class-methods-use-this': 'off',
+    '@typescript-eslint/class-methods-use-this': 'error',
     'comma-dangle': 'off',
     '@typescript-eslint/comma-dangle': [
       'error',
@@ -95,6 +97,8 @@ module.exports = {
     '@typescript-eslint/keyword-spacing': 'error',
     '@typescript-eslint/lines-around-comment': 'off', // Maybe later
     '@typescript-eslint/lines-between-class-members': 'error',
+    'max-params': 'off',
+    '@typescript-eslint/max-params': ['error', {max: 4}],
     '@typescript-eslint/member-delimiter-style': 'error',
     '@typescript-eslint/member-ordering': 'error',
     '@typescript-eslint/method-signature-style': ['error', 'method'],
@@ -175,6 +179,8 @@ module.exports = {
     '@typescript-eslint/padding-line-between-statements': 'error',
     '@typescript-eslint/parameter-properties': 'error',
     '@typescript-eslint/prefer-as-const': 'error',
+    'prefer-destructuring': 'off',
+    '@typescript-eslint/prefer-destructuring': 'error',
     '@typescript-eslint/prefer-enum-initializers': 'error',
     '@typescript-eslint/prefer-for-of': 'error',
     '@typescript-eslint/prefer-function-type': 'error',
