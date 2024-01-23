@@ -1,0 +1,25 @@
+{
+  "name": "test",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "lint": "eslint . --ext cjs,mjs,js,ts",
+    "test": "ava ava/*.js"
+  },
+  "keywords": [],
+  "author": "Joe Hildebrand <joe-github@cursive.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "@cto.af/eslint-config": "link:..",
+    "@typescript-eslint/eslint-plugin": "6.19.1",
+    "@typescript-eslint/parser": "6.19.1",
+    "ava": "6.1.0",
+    "eslint": "8.56.0",
+    "eslint-plugin-ava": "14.0.0",
+    "eslint-plugin-jsdoc": "48.0.2",
+    "typescript": "5.3.3"
+  }
+}

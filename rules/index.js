@@ -4,6 +4,9 @@ const {builtinRules} = require('eslint/use-at-your-own-risk');
 const avaPlugin = require('eslint-plugin-ava');
 const nodePlugin = require('eslint-plugin-n');
 const jsdocPlugin = require('eslint-plugin-jsdoc');
+// I don't understand where this is coming from:
+// eslint-disable-next-line n/no-extraneous-require
+const stylisticPlugin = require('@stylistic/eslint-plugin');
 const tsPlugin = require('@typescript-eslint/eslint-plugin');
 
 function rename(rules, prefix) {
@@ -17,6 +20,7 @@ const rules = {
   ...rename(avaPlugin.rules, 'ava'),
   ...rename(nodePlugin.rules, 'n'),
   ...rename(jsdocPlugin.rules, 'jsdoc'),
+  ...rename(stylisticPlugin.rules, '@stylistic'),
   ...rename(tsPlugin.rules, '@typescript-eslint'),
 };
 
