@@ -1,5 +1,10 @@
 'use strict';
 
+// Last updated 2024-01-23
+// "@stylistic/eslint-plugin": "1.5.4",
+// "@typescript-eslint/eslint-plugin": "6.19.1"
+// "eslint-plugin-n": "16.6.2"
+
 module.exports = {
   env: {
     node: true,
@@ -8,6 +13,7 @@ module.exports = {
   },
   plugins: [
     'n',
+    '@stylistic',
   ],
   ignorePatterns: [
     'coverage/',
@@ -120,6 +126,7 @@ module.exports = {
     'id-length': 'off', // Not needed
     'id-match': 'off', // Not needed
     'init-declarations': 'error',
+    'line-comment-position': 'off', // I'm all over the place on these
     'logical-assignment-operators': 'off', // No.
     'max-classes-per-file': 'off', // No.
     'max-depth': 'off', // No.
@@ -135,7 +142,6 @@ module.exports = {
     'no-bitwise': 'off', // Lol.  Not in these projects
     'no-caller': 'error',
     'no-case-declarations': 'error',
-    'no-confusing-arrow': 'error',
     'no-console': 'error',
     'no-continue': 'off', // Why?
     'no-delete-var': 'error',
@@ -150,8 +156,6 @@ module.exports = {
     'no-extra-bind': 'error',
     'no-extra-boolean-cast': 'error',
     'no-extra-label': 'error',
-    'no-extra-semi': 'error',
-    'no-floating-decimal': 'error',
     'no-global-assign': 'error',
     'no-implicit-coercion': 'error',
     'no-implicit-globals': 'error',
@@ -164,9 +168,7 @@ module.exports = {
     'no-lone-blocks': 'error',
     'no-lonely-if': 'error',
     'no-loop-func': 'error',
-    // No shot at this for node-cbor.  For other projects, yes.
-    'no-magic-numbers': 'off',
-    'no-mixed-operators': 'error',
+    'no-magic-numbers': 'off', // No shot at this for node-cbor.  For other projects, yes.
     'no-multi-assign': 'error',
     'no-multi-str': 'error',
     'no-negated-condition': 'error',
@@ -215,7 +217,6 @@ module.exports = {
     'no-with': 'error',
     'object-shorthand': 'error',
     'one-var': ['error', 'never'],
-    'one-var-declaration-per-line': 'error',
     'operator-assignment': 'error',
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
@@ -230,7 +231,6 @@ module.exports = {
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
     'prefer-template': 'error',
-    'quote-props': ['error', 'consistent-as-needed'],
     'radix': 'error',
     'require-await': 'error',
     'require-unicode-regexp': 'off', // No.
@@ -238,92 +238,123 @@ module.exports = {
     'sort-imports': 'error',
     'sort-keys': 'off', // Pedantic
     'sort-vars': 'off', // Pedantic
-    'spaced-comment': ['error', 'always'],
     'strict': ['error', 'global'],
     'symbol-description': 'error',
+    'unicode-bom': 'error',
     'vars-on-top': 'error',
     'yoda': ['error', 'never', {exceptRange: true}],
 
-    // [Layout & Formatting](https://eslint.org/docs/rules/#layout-formatting)
-    'array-bracket-newline': ['error', 'consistent'],
-    'array-bracket-spacing': ['error', 'never'],
-    'array-element-newline': ['error', 'consistent'],
-    'arrow-parens': ['error', 'as-needed'],
-    'arrow-spacing': 'error',
-    'block-spacing': ['error', 'always'],
-    'brace-style': ['error', '1tbs'],
-    'comma-dangle': ['error', {
+    // [Stylistc](https://eslint.style/packages/default)
+    '@stylistic/array-bracket-newline': ['error', 'consistent'],
+    '@stylistic/array-bracket-spacing': ['error', 'never'],
+    '@stylistic/array-element-newline': ['error', 'consistent'],
+    '@stylistic/arrow-parens': ['error', 'as-needed'],
+    '@stylistic/arrow-spacing': 'error',
+    '@stylistic/block-spacing': ['error', 'always'],
+    '@stylistic/brace-style': ['error', '1tbs'],
+    '@stylistic/comma-dangle': ['error', {
       arrays: 'always-multiline',
       objects: 'always-multiline',
       imports: 'always-multiline',
       exports: 'always-multiline',
       functions: 'never',
     }],
-    'comma-spacing': 'error',
-    'comma-style': ['error', 'last'],
-    'computed-property-spacing': 'error',
-    'dot-location': ['error', 'property'],
-    'eol-last': 'error',
-    'func-call-spacing': 'error',
-    'function-call-argument-newline': ['error', 'consistent'],
-    'function-paren-newline': ['error', 'consistent'],
-    'generator-star-spacing': 'error',
-    'implicit-arrow-linebreak': ['error', 'beside'],
-    'indent': ['error', 2, {SwitchCase: 1}],
-    'jsx-quotes': 'off', // Not needed
-    'key-spacing': 'error',
-    'keyword-spacing': 'error',
-    'line-comment-position': 'off', // I'm all over the place on these
-    'linebreak-style': 'error',
-    'lines-around-comment': ['error', {
+    '@stylistic/comma-spacing': 'error',
+    '@stylistic/comma-style': ['error', 'last'],
+    '@stylistic/computed-property-spacing': 'error',
+    '@stylistic/dot-location': ['error', 'property'],
+    '@stylistic/eol-last': 'error',
+    '@stylistic/func-call-spacing': 'off', // Renamed
+    '@stylistic/function-call-argument-newline': ['error', 'consistent'],
+    '@stylistic/function-call-spacing': 'error',
+    '@stylistic/function-paren-newline': ['error', 'consistent'],
+    '@stylistic/generator-star-spacing': 'error',
+    '@stylistic/implicit-arrow-linebreak': ['error', 'beside'],
+    '@stylistic/indent': ['error', 2, {SwitchCase: 1}],
+    '@stylistic/indent-binary-ops': 'off', // Not good enough
+
+    '@stylistic/jsx-child-element-spacing': 'off', // Not needed
+    '@stylistic/jsx-closing-bracket-location': 'off', // Not needed
+    '@stylistic/jsx-closing-tag-location': 'off', // Not needed
+    '@stylistic/jsx-curly-brace-presence': 'off', // Not needed
+    '@stylistic/jsx-curly-newline': 'off', // Not needed
+    '@stylistic/jsx-curly-spacing': 'off', // Not needed
+    '@stylistic/jsx-equals-spacing': 'off', // Not needed
+    '@stylistic/jsx-first-prop-new-line': 'off', // Not needed
+    '@stylistic/jsx-indent': 'off', // Not needed
+    '@stylistic/jsx-indent-props': 'off', // Not needed
+    '@stylistic/jsx-max-props-per-line': 'off', // Not needed
+    '@stylistic/jsx-newline': 'off', // Not needed
+    '@stylistic/jsx-one-expression-per-line': 'off', // Not needed
+    '@stylistic/jsx-props-no-multi-spaces': 'off', // Not needed
+    '@stylistic/jsx-quotes': 'off', // Not needed
+    '@stylistic/jsx-self-closing-comp': 'off', // Not needed
+    '@stylistic/jsx-sort-props': 'off', // Not needed
+    '@stylistic/jsx-tag-spacing': 'off', // Not needed
+    '@stylistic/jsx-wrap-multilines': 'off', // Not needed
+
+    '@stylistic/key-spacing': 'error',
+    '@stylistic/keyword-spacing': 'error',
+    '@stylistic/linebreak-style': 'error',
+    '@stylistic/lines-around-comment': ['error', {
       allowBlockStart: true,
       allowClassStart: true,
     }],
-    'lines-between-class-members': ['error', 'always', {
+    '@stylistic/lines-between-class-members': ['error', 'always', {
       exceptAfterSingleLine: true,
     }],
-    'max-len': ['error', 80, {
+    '@stylistic/max-len': ['error', 80, {
       ignoreRegExpLiterals: true,
       ignoreStrings: true,
       ignoreTemplateLiterals: true,
       ignoreUrls: true,
     }],
-    'max-statements-per-line': 'off',
-    'multiline-ternary': ['error', 'always-multiline'],
-    'new-parens': 'error',
-    'newline-per-chained-call': 'error',
-    'no-extra-parens': 'off', // Too fiddly to torn off everything.
-    'no-mixed-spaces-and-tabs': 'error',
-    'no-multi-spaces': 'error',
-    'no-multiple-empty-lines': ['error', {max: 1}],
-    'no-tabs': 'error',
-    'no-trailing-spaces': 'error',
-    'no-whitespace-before-property': 'error',
-    'nonblock-statement-body-position': 'error',
-    'object-curly-newline': 'error',
-    'object-curly-spacing': ['error', 'never'],
-    'object-property-newline': ['error', {allowAllPropertiesOnSameLine: true}],
-    'operator-linebreak': ['error', 'after'],
-    'padded-blocks': ['error', 'never'],
-    'padding-line-between-statements': 'error',
-    'quotes': ['error', 'single', {avoidEscape: true}],
-    'rest-spread-spacing': ['error', 'never'],
+    '@stylistic/max-statements-per-line': 'off',
+    '@stylistic/member-delimiter-style': 'off',
+    '@stylistic/multiline-ternary': ['error', 'always-multiline'],
+    '@stylistic/new-parens': 'error',
+    '@stylistic/newline-per-chained-call': 'error',
+    '@stylistic/no-confusing-arrow': 'error',
+    '@stylistic/no-extra-parens': 'off', // Too fiddly to torn off everything.
+    '@stylistic/no-extra-semi': 'error',
+    '@stylistic/no-floating-decimal': 'error',
+    '@stylistic/no-mixed-operators': 'error',
+    '@stylistic/no-mixed-spaces-and-tabs': 'error',
+    '@stylistic/no-multi-spaces': 'error',
+    '@stylistic/no-multiple-empty-lines': ['error', {max: 1}],
+    '@stylistic/no-tabs': 'error',
+    '@stylistic/no-trailing-spaces': 'error',
+    '@stylistic/no-whitespace-before-property': 'error',
+    '@stylistic/nonblock-statement-body-position': 'error',
+    '@stylistic/object-curly-newline': 'error',
+    '@stylistic/object-curly-spacing': ['error', 'never'],
+    '@stylistic/object-property-newline': ['error', {allowAllPropertiesOnSameLine: true}],
+    '@stylistic/one-var-declaration-per-line': 'error',
+    '@stylistic/operator-linebreak': ['error', 'after'],
+    '@stylistic/padded-blocks': ['error', 'never'],
+    '@stylistic/padding-line-between-statements': 'error',
+    '@stylistic/quote-props': ['error', 'consistent-as-needed'],
+    '@stylistic/quotes': ['error', 'single', {avoidEscape: true}],
+    '@stylistic/rest-spread-spacing': ['error', 'never'],
     // Massive breaking change.  I changed my mind.
-    'semi': ['error', 'always'],
-    'semi-spacing': 'error',
-    'semi-style': ['error'],
-    'space-before-blocks': 'error',
-    'space-before-function-paren': ['error', 'never'],
-    'space-in-parens': 'error',
-    'space-infix-ops': ['error', {int32Hint: false}],
-    'space-unary-ops': 'error',
-    'switch-colon-spacing': 'error',
-    'template-curly-spacing': 'error',
-    'template-tag-spacing': 'error',
-    'unicode-bom': 'error',
-    'wrap-iife': 'error',
-    'wrap-regex': 'off', // No.
-    'yield-star-spacing': ['error', 'before'],
+    '@stylistic/semi': ['error', 'always'],
+    '@stylistic/semi-spacing': 'error',
+    '@stylistic/semi-style': ['error'],
+    '@stylistic/space-before-blocks': 'error',
+    '@stylistic/space-before-function-paren': ['error', 'never'],
+    '@stylistic/space-in-parens': 'error',
+    '@stylistic/space-infix-ops': ['error', {int32Hint: false}],
+    '@stylistic/space-unary-ops': 'error',
+    '@stylistic/spaced-comment': ['error', 'always'],
+    '@stylistic/switch-colon-spacing': 'error',
+    '@stylistic/template-curly-spacing': 'error',
+    '@stylistic/template-tag-spacing': 'error',
+    '@stylistic/type-annotation-spacing': 'off', // Not TS.
+    '@stylistic/type-generic-spacing': 'off', // Not TS.
+    '@stylistic/type-named-tuple-spacing': 'off', // Not TS.
+    '@stylistic/wrap-iife': 'error',
+    '@stylistic/wrap-regex': 'off', // No.
+    '@stylistic/yield-star-spacing': ['error', 'before'],
 
     // [Possible Errors](https://github.com/eslint-community/eslint-plugin-n#possible-errors)
     'n/handle-callback-err': ['error', 'er'],
