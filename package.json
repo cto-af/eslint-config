@@ -5,10 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "cd test; npm run test",
-    "lint": "eslint . --ext js,cjs,mjs,ts",
-    "unused": "eslint-find-rules index.js -u && eslint-find-rules ava.js -u --no-core && eslint-find-rules jsdoc.js -u --no-core && eslint-find-rules ts.js -u --no-core",
-    "update": "ncu -u --deep && ncu --dep peer -u && npm run unused && pnpm i -r && npm test",
-    "ci": "npm run lint && npm run test && npm run unused"
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run test"
   },
   "keywords": [
     "lint"
@@ -18,21 +16,18 @@
   "repository": "cto-af/eslint-config",
   "dependencies": {
     "@stylistic/eslint-plugin": "1.6.3",
-    "eslint-plugin-n": "16.6.2"
+    "eslint-plugin-n": "16.6.2",
+    "globals": "14.0.0"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "~7",
-    "@typescript-eslint/parser": "~7",
     "eslint": "~8",
     "eslint-plugin-ava": "~14",
     "eslint-plugin-jsdoc": "~48",
-    "typescript": "~5"
+    "typescript": "~5",
+    "typescript-eslint": "~7"
   },
   "peerDependenciesMeta": {
-    "@typescript-eslint/eslint-plugin": {
-      "optional": true
-    },
-    "@typescript-eslint/parser": {
+    "typescript-eslint": {
       "optional": true
     },
     "typescript": {
@@ -46,15 +41,14 @@
     }
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "7.1.1",
-    "@typescript-eslint/parser": "7.1.1",
     "eslint": "^8.57.0",
     "eslint-find-rules": "4.1.0",
     "eslint-plugin-ava": "^14.0.0",
-    "eslint-plugin-hildjj": "link:rules",
+    "@hildjj/sort-rules": "link:sort-rules",
     "eslint-plugin-jsdoc": "^48.2.0",
     "npm-check-updates": "16.14.15",
-    "typescript": "5.4.2"
+    "typescript": "5.4.2",
+    "typescript-eslint": "7.1.1"
   },
   "packageManager": "pnpm@8.15.4",
   "engines": {

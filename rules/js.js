@@ -1,32 +1,8 @@
 'use strict';
 
-// Last updated 2024-01-23
-// "@stylistic/eslint-plugin": "1.5.4",
-// "@typescript-eslint/eslint-plugin": "6.19.1"
-// "eslint-plugin-n": "16.6.2"
-
 module.exports = {
-  env: {
-    node: true,
-    es6: true,
-    es2021: true,
-  },
-  plugins: [
-    'n',
-    '@stylistic',
-  ],
-  ignorePatterns: [
-    'coverage/',
-    'node_modules/',
-    'docs/',
-  ],
-  parserOptions: {
-    ecmaVersion: 2020,
-  },
-  reportUnusedDisableDirectives: true,
   rules: {
-    // Last updated 2023-06-26, v8.43.0
-    // eslint-plugin-n 16.0.1
+    // Check: @, @stylistic, n
 
     // [Possible Problems](https://eslint.org/docs/rules/#possible-problems)
     'array-callback-return': ['error', {allowImplicit: true}],
@@ -137,8 +113,8 @@ module.exports = {
     'max-statements': 'off', // No.
     'multiline-comment-style': ['error', 'separate-lines'],
     'new-cap': 'error',
-    'no-array-constructor': 'error',
     'no-alert': 'error',
+    'no-array-constructor': 'error',
     'no-bitwise': 'off', // Lol.  Not in these projects
     'no-caller': 'error',
     'no-case-declarations': 'error',
@@ -286,6 +262,7 @@ module.exports = {
     '@stylistic/jsx-max-props-per-line': 'off', // Not needed
     '@stylistic/jsx-newline': 'off', // Not needed
     '@stylistic/jsx-one-expression-per-line': 'off', // Not needed
+    '@stylistic/jsx-pascal-case': 'off', // Not needed
     '@stylistic/jsx-props-no-multi-spaces': 'off', // Not needed
     '@stylistic/jsx-quotes': 'off', // Not needed
     '@stylistic/jsx-self-closing-comp': 'off', // Not needed
@@ -336,7 +313,6 @@ module.exports = {
     '@stylistic/quote-props': ['error', 'consistent-as-needed'],
     '@stylistic/quotes': ['error', 'single', {avoidEscape: true}],
     '@stylistic/rest-spread-spacing': ['error', 'never'],
-    // Massive breaking change.  I changed my mind.
     '@stylistic/semi': ['error', 'always'],
     '@stylistic/semi-spacing': 'error',
     '@stylistic/semi-style': ['error'],
@@ -406,20 +382,4 @@ module.exports = {
     'n/prefer-promises/dns': 'off',
     'n/prefer-promises/fs': 'off',
   },
-  overrides: [
-    {
-      files: ['*.mjs'],
-      parserOptions: {sourceType: 'module'},
-      rules: {
-        // [Possible Errors](https://eslint.org/docs/rules/#possible-errors)
-        'n/no-unsupported-features/es-syntax': [
-          'error',
-          {
-            version: '>=12.19',
-            ignores: ['modules'],
-          },
-        ],
-      },
-    },
-  ],
 };
