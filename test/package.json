@@ -6,20 +6,20 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "lint": "eslint . --ext cjs,mjs,js,ts",
+    "lint": "eslint .",
     "test": "ava ava/*.js"
   },
   "keywords": [],
   "author": "Joe Hildebrand <joe-github@cursive.net>",
   "license": "MIT",
+  "packageManager": "pnpm@8.15.4",
   "devDependencies": {
     "@cto.af/eslint-config": "link:..",
-    "@typescript-eslint/eslint-plugin": "6.19.1",
-    "@typescript-eslint/parser": "6.19.1",
-    "ava": "6.1.0",
-    "eslint": "8.56.0",
+    "ava": "6.1.2",
+    "eslint": "8.57.0",
     "eslint-plugin-ava": "14.0.0",
-    "eslint-plugin-jsdoc": "48.0.2",
-    "typescript": "5.3.3"
+    "eslint-plugin-jsdoc": "48.2.1",
+    "typescript": "5.3.3",
+    "typescript-eslint": "7.1.1"
   }
 }

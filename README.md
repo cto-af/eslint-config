@@ -1,6 +1,6 @@
 # @cto-af/eslint-config
 
-EsLint rules for [cto.af](https://cto.af) projects.
+EsLint rules for [cto.af](https://cto.af) projects, using ESLint flat configs.
 
 ## Install
 
@@ -8,40 +8,53 @@ EsLint rules for [cto.af](https://cto.af) projects.
 npm install -D eslint @cto-af/eslint-config
 ```
 
+Optionally:
+```sh
+npm install -D typescript-eslint typescript eslint-plugin-ava eslint-plugin-jsdoc eslint-plugin-markdown
+```
+
 ## CommonJS project:
 
-.eslintrc.js
-```js
-'use strict';
+eslint.config.js
 
-module.exports = {
-  root: true,
-  extends: ['@cto.af'],
-};
+```cjs
+module.exports = require('@cto.af/eslint-config');
 ```
 
 ## ES6 project:
 
-.eslintrc.cjs
-```js
-'use strict';
+eslint.config.js
 
-module.exports = {
-  root: true,
-  extends: ['@cto.af/eslint-config/modules'],
-};
+```mjs
+import es6 from '@cto.af/eslint-config/es6.js';
+
+export default es6;
 ```
 
 ## TS Project:
 
-install:
-```sh
-npm install -D typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
+eslint.config.js:
+
+```mjs
+import es6 from '@cto.af/eslint-config/es6.js';
+import ts from '@cto.af/eslint-config/ts.js';
+
+export default [
+  ...es6,
+  ts,
+];
 ```
 
-.eslintrc.cjs
-```js
-module.exports = {
-  extends: '@cto.af/eslint-config/modules'
-}
+## Turn on everything:
+
+eslint.config.js:
+
+```mjs
+import all from '@cto.af/eslint-config/all.js';
+import mod from '@cto.af/eslint-config/module.js';
+
+export default [
+  ...all,
+  mod,
+];
 ```
