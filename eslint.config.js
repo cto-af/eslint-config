@@ -3,16 +3,10 @@
 module.exports = [
   {
     ignores: [
-      'node_modules/**',
       'test/**',
     ],
   },
-  require('./js'),
-  require('./mjs'),
-  require('./ts'),
-  require('./jsdoc'),
-  require('./jsdoc_ts.js'),
-  require('./ava'),
+  ...require('./all.js'),
   {
     files: [
       'rules/*.js',

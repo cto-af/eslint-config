@@ -3,7 +3,7 @@
 const {rules} = require('./rules/ts.js');
 const tslint = require('typescript-eslint');
 
-module.exports = {
+module.exports = [{
   files: ['**/*.ts'],
   ignores: [
     'coverage/**',
@@ -12,5 +12,5 @@ module.exports = {
   ],
   ...tslint.configs.base,
   rules,
-};
-module.exports.languageOptions.parserOptions.project = true;
+}];
+module.exports[0].languageOptions.parserOptions.project = true;

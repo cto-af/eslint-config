@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = {
+module.exports = [{
   files: [
     '**/*.ts',
   ],
@@ -9,4 +9,4 @@ module.exports = {
     'jsdoc/require-param-type': 'off', // Not needed in TS
     'jsdoc/require-returns-type': 'off', // Not needed in TS
   },
-};
+}];

@@ -7,5 +7,5 @@ eslint.config.js
 find/
 node_modules
 pnpm-lock.yaml
-sort/
+sort-rules/
 test/

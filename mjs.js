@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = {
+module.exports = [{
   files: [
     '**/*.mjs',
     '**/*.ts',
@@ -8,4 +8,4 @@ module.exports = {
   languageOptions: {
     sourceType: 'module',
   },
-};
+}];

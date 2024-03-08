@@ -1,9 +1,7 @@
 'use strict';
 
 const {rules} = require('./rules/jsdoc.js');
-const jsdoc = require('eslint-plugin-jsdoc');
-
-module.exports = {
+module.exports = [{
   files: [
     '**/*.js',
     '**/*.cjs',
@@ -11,7 +9,7 @@ module.exports = {
     '**/*.ts',
   ],
   plugins: {
-    jsdoc,
+    jsdoc: require('eslint-plugin-jsdoc'),
   },
   settings: {
     jsdoc: {
@@ -21,4 +19,4 @@ module.exports = {
     },
   },
   rules,
-};
+}];

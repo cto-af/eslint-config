@@ -3,17 +3,12 @@
 const globals = require('globals');
 const {rules} = require('./rules/js.js');
 
-module.exports = {
+module.exports = [{
   files: [
     '**/*.js',
     '**/*.cjs',
     '**/*.mjs',
     '**/*.ts',
-  ],
-  ignores: [
-    'coverage/**',
-    'node_modules/**',
-    'docs/**',
   ],
   plugins: {
     '@stylistic': require('@stylistic/eslint-plugin'),
@@ -25,4 +20,4 @@ module.exports = {
     sourceType: 'commonjs',
   },
   rules,
-};
+}];

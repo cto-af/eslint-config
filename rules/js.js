@@ -234,6 +234,8 @@ module.exports = {
       imports: 'always-multiline',
       exports: 'always-multiline',
       functions: 'never',
+      enums: 'always-multiline',
+      tuples: 'always-multiline',
     }],
     '@stylistic/comma-spacing': 'error',
     '@stylistic/comma-style': ['error', 'last'],
@@ -274,8 +276,13 @@ module.exports = {
     '@stylistic/keyword-spacing': 'error',
     '@stylistic/linebreak-style': 'error',
     '@stylistic/lines-around-comment': ['error', {
+      allowArrayStart: true,
       allowBlockStart: true,
       allowClassStart: true,
+      allowEnumStart: true,
+      allowInterfaceStart: true,
+      allowObjectStart: true,
+      allowTypeStart: true,
     }],
     '@stylistic/lines-between-class-members': ['error', 'always', {
       exceptAfterSingleLine: true,

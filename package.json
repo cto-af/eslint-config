@@ -4,7 +4,7 @@
   "description": "hildjj's lint rules",
   "main": "index.js",
   "scripts": {
-    "test": "cd test; npm run test",
+    "test": "cd test; npm run test; npm run lint",
     "lint": "eslint .",
     "ci": "npm run lint && npm run test"
   },
@@ -23,31 +23,36 @@
     "eslint": "~8",
     "eslint-plugin-ava": "~14",
     "eslint-plugin-jsdoc": "~48",
+    "eslint-plugin-markdown": "~4",
     "typescript": "~5",
     "typescript-eslint": "~7"
   },
   "peerDependenciesMeta": {
-    "typescript-eslint": {
-      "optional": true
-    },
-    "typescript": {
-      "optional": true
-    },
     "eslint-plugin-ava": {
       "optional": true
     },
     "eslint-plugin-jsdoc": {
       "optional": true
+    },
+    "eslint-plugin-markdown": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    },
+    "typescript-eslint": {
+      "optional": true
     }
   },
   "devDependencies": {
+    "@hildjj/sort-rules": "link:sort-rules",
     "eslint": "^8.57.0",
     "eslint-find-rules": "4.1.0",
     "eslint-plugin-ava": "^14.0.0",
-    "@hildjj/sort-rules": "link:sort-rules",
     "eslint-plugin-jsdoc": "^48.2.0",
+    "eslint-plugin-markdown": "4.0.1",
     "npm-check-updates": "16.14.15",
-    "typescript": "5.4.2",
+    "typescript": "5.3.3",
     "typescript-eslint": "7.1.1"
   },
   "packageManager": "pnpm@8.15.4",
