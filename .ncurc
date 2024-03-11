@@ -1,4 +1,3 @@
 {
-  "dep": ["optional", "peer", "prod", "dev", "packageManager"],
-  "reject": ["typescript"]
+  "dep": ["dev", "optional", "peer", "prod", "packageManager"]
 }

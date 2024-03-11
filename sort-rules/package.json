@@ -12,13 +12,12 @@
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "1.6.3",
-    "@typescript-eslint/eslint-plugin": "7.1.1",
-    "@typescript-eslint/parser": "7.1.1",
     "eslint": "^8.57.0",
     "eslint-plugin-ava": "^14.0.0",
     "eslint-plugin-jsdoc": "^48.2.1",
     "eslint-plugin-n": "16.6.2",
-    "typescript": "5.3.3"
+    "typescript": "5.4.2",
+    "typescript-eslint": "7.2.0"
   },
   "packageManager": "pnpm@8.15.4",
   "engines": {

@@ -19,41 +19,16 @@
     "eslint-plugin-n": "16.6.2",
     "globals": "14.0.0"
   },
-  "peerDependencies": {
-    "eslint": "~8",
-    "eslint-plugin-ava": "~14",
-    "eslint-plugin-jsdoc": "~48",
-    "eslint-plugin-markdown": "~4",
-    "typescript": "~5",
-    "typescript-eslint": "~7"
-  },
-  "peerDependenciesMeta": {
-    "eslint-plugin-ava": {
-      "optional": true
-    },
-    "eslint-plugin-jsdoc": {
-      "optional": true
-    },
-    "eslint-plugin-markdown": {
-      "optional": true
-    },
-    "typescript": {
-      "optional": true
-    },
-    "typescript-eslint": {
-      "optional": true
-    }
-  },
   "devDependencies": {
     "@hildjj/sort-rules": "link:sort-rules",
     "eslint": "^8.57.0",
-    "eslint-find-rules": "4.1.0",
+    "eslint-find-rules": "^4.1.0",
     "eslint-plugin-ava": "^14.0.0",
-    "eslint-plugin-jsdoc": "^48.2.0",
-    "eslint-plugin-markdown": "4.0.1",
-    "npm-check-updates": "16.14.15",
-    "typescript": "5.3.3",
-    "typescript-eslint": "7.1.1"
+    "eslint-plugin-jsdoc": "^48.2.1",
+    "eslint-plugin-markdown": "^4.0.1",
+    "npm-check-updates": "^16.14.15",
+    "typescript": "^5.4.2",
+    "typescript-eslint": "^7.2.0"
   },
   "packageManager": "pnpm@8.15.4",
   "engines": {
