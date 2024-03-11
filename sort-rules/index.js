@@ -4,7 +4,7 @@ const avaPlugin = require('eslint-plugin-ava');
 const nodePlugin = require('eslint-plugin-n');
 const jsdocPlugin = require('eslint-plugin-jsdoc');
 const stylisticPlugin = require('@stylistic/eslint-plugin');
-const tsPlugin = require('@typescript-eslint/eslint-plugin');
+const tsPlugin = require('typescript-eslint').plugin;
 
 function rename(rules, prefix) {
   return Object.fromEntries(

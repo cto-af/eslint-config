@@ -13,4 +13,9 @@ module.exports = [{
   ...tslint.configs.base,
   rules,
 }];
-module.exports[0].languageOptions.parserOptions.project = true;
+
+module.exports[0].languageOptions.parserOptions = {
+  // It's undefined for now, but just in case.
+  ...module.exports[0].languageOptions.parserOptions,
+  project: true,
+};
