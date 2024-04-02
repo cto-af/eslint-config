@@ -129,7 +129,6 @@ module.exports = {
     '@typescript-eslint/no-restricted-imports': 'off', // Not needed
     '@typescript-eslint/no-shadow': 'error',
     '@typescript-eslint/no-this-alias': 'error',
-    '@typescript-eslint/no-throw-literal': 'error',
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'off', // Can't config
     '@typescript-eslint/no-unnecessary-condition': 'off', // Can't config
     '@typescript-eslint/no-unnecessary-qualifier': 'off', // Can't config
@@ -160,6 +159,7 @@ module.exports = {
     '@typescript-eslint/no-useless-template-literals': 'error',
     '@typescript-eslint/no-var-requires': 'error',
     '@typescript-eslint/non-nullable-type-assertion-style': 'off', // Can't config
+    '@typescript-eslint/only-throw-error': 'error',
     '@typescript-eslint/parameter-properties': 'error',
     '@typescript-eslint/prefer-as-const': 'error',
     '@typescript-eslint/prefer-destructuring': 'error',
@@ -193,6 +193,7 @@ module.exports = {
     '@typescript-eslint/typedef': 'error',
     '@typescript-eslint/unbound-method': 'off', // Can't config
     '@typescript-eslint/unified-signatures': 'off', // Too hard
+    '@typescript-eslint/use-unknown-in-catch-callback-variable': 'error',
 
     // These are the stylistic rules that require TS.  All of the
     // others from the JS rules should work as-is.
