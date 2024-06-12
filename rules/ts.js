@@ -14,7 +14,6 @@ module.exports = {
     'no-dupe-keys': 'off', // ts(1117)
     'no-func-assign': 'off', // ts(2630)
     'no-import-assign': 'off', // ts(2632) & ts(2540)
-    'no-new-symbol': 'off', // ts(7009)
     'no-obj-calls': 'off', // ts(2349)
     'no-redeclare': 'off', // ts(2451)
     'no-setter-return': 'off', // ts(2408)
@@ -58,6 +57,10 @@ module.exports = {
     '@typescript-eslint/await-thenable': 'off', // Can't config
     '@typescript-eslint/ban-ts-comment': ['error', {
       'ts-expect-error': 'allow-with-description',
+      'ts-ignore': true,
+      'ts-nocheck': true,
+      'ts-check': false,
+      'minimumDescriptionLength': 3,
     }],
     '@typescript-eslint/ban-tslint-comment': 'error',
     '@typescript-eslint/ban-types': 'off', // Not needed
@@ -101,7 +104,7 @@ module.exports = {
     '@typescript-eslint/no-duplicate-type-constituents': 'error',
     '@typescript-eslint/no-dynamic-delete': 'error',
     '@typescript-eslint/no-empty-function': 'error',
-    '@typescript-eslint/no-empty-interface': 'error',
+    '@typescript-eslint/no-empty-object-type': 'error',
     '@typescript-eslint/no-explicit-any': 'off', // Too hard
     '@typescript-eslint/no-extra-non-null-assertion': 'error',
     '@typescript-eslint/no-extraneous-class': 'error',
@@ -113,7 +116,6 @@ module.exports = {
     '@typescript-eslint/no-invalid-this': 'error',
     '@typescript-eslint/no-invalid-void-type': 'error',
     '@typescript-eslint/no-loop-func': 'error',
-    '@typescript-eslint/no-loss-of-precision': 'error',
     '@typescript-eslint/no-magic-numbers': 'off', // Too late
     '@typescript-eslint/no-meaningless-void-operator': 'off', // Can't config
     '@typescript-eslint/no-misused-new': 'error',
@@ -132,6 +134,7 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'off', // Can't config
     '@typescript-eslint/no-unnecessary-condition': 'off', // Can't config
     '@typescript-eslint/no-unnecessary-qualifier': 'off', // Can't config
+    '@typescript-eslint/no-unnecessary-template-expression': 'error',
     '@typescript-eslint/no-unnecessary-type-arguments': 'off', // Can't config
     '@typescript-eslint/no-unnecessary-type-assertion': 'off', // Can't config
     '@typescript-eslint/no-unnecessary-type-constraint': 'error',
@@ -156,8 +159,6 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': 'error',
     '@typescript-eslint/no-useless-constructor': 'error',
     '@typescript-eslint/no-useless-empty-export': 'error',
-    '@typescript-eslint/no-useless-template-literals': 'error',
-    '@typescript-eslint/no-var-requires': 'error',
     '@typescript-eslint/non-nullable-type-assertion-style': 'off', // Can't config
     '@typescript-eslint/only-throw-error': 'error',
     '@typescript-eslint/parameter-properties': 'error',
@@ -179,14 +180,12 @@ module.exports = {
     '@typescript-eslint/prefer-regexp-exec': 'off', // Can't config
     '@typescript-eslint/prefer-return-this-type': 'off', // Can't config
     '@typescript-eslint/prefer-string-starts-ends-with': 'off', // Can't config
-    '@typescript-eslint/prefer-ts-expect-error': 'error',
     '@typescript-eslint/promise-function-async': 'off', // Can't config
     '@typescript-eslint/require-array-sort-compare': 'off', // Can't config
     '@typescript-eslint/require-await': 'error',
     '@typescript-eslint/restrict-plus-operands': 'off', // Can't config
     '@typescript-eslint/restrict-template-expressions': 'off', // Can't config
     '@typescript-eslint/return-await': 'error',
-    '@typescript-eslint/sort-type-constituents': 'error',
     '@typescript-eslint/strict-boolean-expressions': 'off', // Can't config
     '@typescript-eslint/switch-exhaustiveness-check': 'off', // Can't config
     '@typescript-eslint/triple-slash-reference': 'error',
