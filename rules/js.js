@@ -38,7 +38,6 @@ module.exports = {
     'no-loss-of-precision': 'error',
     'no-misleading-character-class': 'error',
     'no-new-native-nonconstructor': 'error',
-    'no-new-symbol': 'error',
     'no-obj-calls': 'error',
     'no-promise-executor-return': 'error',
     'no-prototype-builtins': 'error',
@@ -67,6 +66,7 @@ module.exports = {
       },
     ],
     'no-use-before-define': 'error',
+    'no-useless-assignment': 'error',
     'no-useless-backreference': 'error',
     'require-atomic-updates': 'error',
     'use-isnan': 'error',
@@ -102,7 +102,6 @@ module.exports = {
     'id-length': 'off', // Not needed
     'id-match': 'off', // Not needed
     'init-declarations': 'error',
-    'line-comment-position': 'off', // I'm all over the place on these
     'logical-assignment-operators': 'off', // No.
     'max-classes-per-file': 'off', // No.
     'max-depth': 'off', // No.
@@ -111,7 +110,6 @@ module.exports = {
     'max-nested-callbacks': 'off', // No.
     'max-params': ['error', 4],
     'max-statements': 'off', // No.
-    'multiline-comment-style': ['error', 'separate-lines'],
     'new-cap': 'error',
     'no-alert': 'error',
     'no-array-constructor': 'error',
@@ -259,6 +257,7 @@ module.exports = {
     '@stylistic/jsx-curly-spacing': 'off', // Not needed
     '@stylistic/jsx-equals-spacing': 'off', // Not needed
     '@stylistic/jsx-first-prop-new-line': 'off', // Not needed
+    '@stylistic/jsx-function-call-newline': 'off', // Not needed
     '@stylistic/jsx-indent': 'off', // Not needed
     '@stylistic/jsx-indent-props': 'off', // Not needed
     '@stylistic/jsx-max-props-per-line': 'off', // Not needed
@@ -274,6 +273,7 @@ module.exports = {
 
     '@stylistic/key-spacing': 'error',
     '@stylistic/keyword-spacing': 'error',
+    '@stylistic/line-comment-position': 'off', // Too hard to change
     '@stylistic/linebreak-style': 'error',
     '@stylistic/lines-around-comment': ['error', {
       allowArrayStart: true,
@@ -295,6 +295,7 @@ module.exports = {
     }],
     '@stylistic/max-statements-per-line': 'off',
     '@stylistic/member-delimiter-style': 'off',
+    '@stylistic/multiline-comment-style': 'off', // Not important
     '@stylistic/multiline-ternary': ['error', 'always-multiline'],
     '@stylistic/new-parens': 'error',
     '@stylistic/newline-per-chained-call': 'error',
@@ -359,7 +360,6 @@ module.exports = {
     'n/no-unsupported-features/es-syntax': 'error',
     'n/no-unsupported-features/node-builtins': 'error',
     'n/process-exit-as-throw': 'error',
-    'n/shebang': 'off', // This always seems to be wrong
 
     // [Best Practices](https://github.com/eslint-community/eslint-plugin-n#best-practices)
     'n/no-deprecated-api': 'error',
@@ -370,21 +370,20 @@ module.exports = {
     // Doesn't work for `import 'regenerator-runtime/runtime'`
     'n/file-extension-in-import': 'error',
     'n/global-require': 'off',
+    'n/hashbang': 'off', // Try turning this on sometime
     'n/no-mixed-requires': 'error',
-    // No
-    'n/no-process-env': 'off',
+    'n/no-process-env': 'off', // No
     'n/no-restricted-import': 'off',
     'n/no-restricted-require': 'off',
     'n/no-sync': 'off',
-
     'n/prefer-global/buffer': ['error', 'never'],
-    // Hopefully only used in tests and cli
-    'n/prefer-global/console': 'off',
+    'n/prefer-global/console': 'off', // Hopefully only used in tests and cli
     'n/prefer-global/process': 'off',
     'n/prefer-global/text-decoder': ['error', 'always'],
     'n/prefer-global/text-encoder': ['error', 'always'],
     'n/prefer-global/url': ['error', 'always'],
     'n/prefer-global/url-search-params': ['error', 'always'],
+    'n/prefer-node-protocol': 'error', // Turn off when needed
     // Not yet
     'n/prefer-promises/dns': 'off',
     'n/prefer-promises/fs': 'off',
