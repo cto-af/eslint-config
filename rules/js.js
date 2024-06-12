@@ -66,7 +66,9 @@ module.exports = {
       },
     ],
     'no-use-before-define': 'error',
-    'no-useless-assignment': 'error',
+    // Doesn't account for try blocks
+    // See https://github.com/eslint/eslint/issues/17579
+    'no-useless-assignment': 'off',
     'no-useless-backreference': 'error',
     'require-atomic-updates': 'error',
     'use-isnan': 'error',
