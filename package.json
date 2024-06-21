@@ -15,17 +15,17 @@
   "license": "MIT",
   "repository": "cto-af/eslint-config",
   "dependencies": {
-    "@stylistic/eslint-plugin": "2.1.0",
-    "eslint-plugin-n": "17.8.1",
-    "globals": "15.4.0"
+    "@stylistic/eslint-plugin": "2.2.2",
+    "eslint-plugin-n": "17.9.0",
+    "globals": "15.6.0"
   },
   "devDependencies": {
     "@hildjj/sort-rules": "link:sort-rules",
-    "eslint": "^9.4.0",
+    "eslint": "^9.5.0",
     "eslint-plugin-ava": "^15.0.1",
-    "eslint-plugin-jsdoc": "^48.2.9",
+    "eslint-plugin-jsdoc": "^48.2.12",
     "eslint-plugin-markdown": "^5.0.0",
-    "typescript": "^5.4.5",
+    "typescript": "5.4.5",
     "typescript-eslint": "^8.0.0-alpha.30"
   },
   "overrides": {
@@ -38,7 +38,7 @@
       "@typescript-eslint/parser": "8.0.0-alpha.30"
     }
   },
-  "packageManager": "pnpm@9.3.0",
+  "packageManager": "pnpm@9.4.0",
   "engines": {
     "node": ">=18"
   }
