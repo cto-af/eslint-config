@@ -1,9 +1,9 @@
 'use strict';
 
+/* eslint meta/no-unused-rules: ["error", {ignore: ["n"]}] */
+
 module.exports = {
   rules: {
-    // Check: ava
-
     // [ava](https://github.com/avajs/eslint-plugin-ava?tab=readme-ov-file#rules)
     'ava/assertion-arguments': 'error',
     'ava/hooks-order': 'error',

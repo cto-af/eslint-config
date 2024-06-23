@@ -2,8 +2,6 @@
 
 module.exports = {
   rules: {
-    // Check: @, @stylistic, n
-
     // [Possible Problems](https://eslint.org/docs/rules/#possible-problems)
     'array-callback-return': ['error', {allowImplicit: true}],
     'constructor-super': 'error',
