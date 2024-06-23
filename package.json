@@ -20,11 +20,12 @@
     "globals": "15.6.0"
   },
   "devDependencies": {
-    "@hildjj/sort-rules": "link:sort-rules",
+    "@cto.af/eslint-plugin-meta": "github:cto-af/eslint-plugin-meta",
     "eslint": "^9.5.0",
     "eslint-plugin-ava": "^15.0.1",
     "eslint-plugin-jsdoc": "^48.2.12",
     "eslint-plugin-markdown": "^5.0.0",
+    "eslint-plugin-mocha": "10.4.3",
     "typescript": "5.4.5",
     "typescript-eslint": "^8.0.0-alpha.30"
   },

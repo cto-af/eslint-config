@@ -1,10 +1,10 @@
 /* eslint-disable capitalized-comments */
 'use strict';
 
+/* eslint meta/no-unused-rules: ["error", {ignore: ["@", "@stylistic"]}] */
+
 module.exports = {
   rules: {
-    // Check: @typescript-eslint
-
     // [@typescript-eslint/eslint-recommended](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/src/configs/eslint-recommended-raw.ts)
     'constructor-super': 'off', // ts(2335) & ts(2377)
     'getter-return': 'off', // ts(2378)
@@ -196,7 +196,7 @@ module.exports = {
 
     // These are the stylistic rules that require TS.  All of the
     // others from the JS rules should work as-is.
-    // [Stylistc](https://eslint.style/packages/default)
+    // [Stylistc](https://eslint.style/packages/ts#rules)
     '@stylistic/member-delimiter-style': 'error',
     '@stylistic/type-annotation-spacing': 'error',
     '@stylistic/type-generic-spacing': 'error',
