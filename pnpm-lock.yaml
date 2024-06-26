@@ -6,6 +6,7 @@ settings:
 
 overrides:
   '@typescript-eslint/utils': 8.0.0-alpha.33
+  '@typescript-eslint/parser': 8.0.0-alpha.33
 
 importers:
 
@@ -157,7 +158,7 @@ packages:
     resolution: {integrity: sha512-kUI6ADSqW3oB4j8IKGmIqEfJrygAWlYbSXzfhlBBb3rwH4HK8RN7xwxj/VsTCLO81mS/dGM7unZKXBBQOZiyNA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
-      '@typescript-eslint/parser': ^8.0.0 || ^8.0.0-alpha.0
+      '@typescript-eslint/parser': 8.0.0-alpha.33
       eslint: ^8.57.0 || ^9.0.0
       typescript: '*'
     peerDependenciesMeta:
