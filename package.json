@@ -1,6 +1,6 @@
 {
   "name": "@cto.af/eslint-config",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "hildjj's lint rules",
   "main": "index.js",
   "scripts": {
@@ -31,7 +31,7 @@
   },
   "overrides": {
     "@typescript-eslint/utils": "8.0.0-alpha.33",
-      "@typescript-eslint/parser": "8.0.0-alpha.33"
+    "@typescript-eslint/parser": "8.0.0-alpha.33"
   },
   "pnpm": {
     "overrides": {
