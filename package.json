@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": "cto-af/eslint-config",
   "dependencies": {
-    "@stylistic/eslint-plugin": "2.2.2",
+    "@stylistic/eslint-plugin": "2.3.0",
     "eslint-plugin-n": "17.9.0",
     "globals": "15.6.0"
   },
@@ -26,17 +26,15 @@
     "eslint-plugin-jsdoc": "^48.4.0",
     "eslint-plugin-markdown": "^5.0.0",
     "eslint-plugin-mocha": "10.4.3",
-    "typescript": "5.4.5",
-    "typescript-eslint": "^8.0.0-alpha.30"
+    "typescript": "5.5.2",
+    "typescript-eslint": "^8.0.0-alpha.33"
   },
   "overrides": {
-    "@typescript-eslint/utils": "8.0.0-alpha.30",
-    "@typescript-eslint/parser": "8.0.0-alpha.30"
+    "@typescript-eslint/utils": "8.0.0-alpha.33"
   },
   "pnpm": {
     "overrides": {
-      "@typescript-eslint/utils": "8.0.0-alpha.30",
-      "@typescript-eslint/parser": "8.0.0-alpha.30"
+      "@typescript-eslint/utils": "8.0.0-alpha.33"
     }
   },
   "packageManager": "pnpm@9.4.0",
