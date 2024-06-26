@@ -258,7 +258,6 @@ module.exports = {
     '@stylistic/jsx-equals-spacing': 'off', // Not needed
     '@stylistic/jsx-first-prop-new-line': 'off', // Not needed
     '@stylistic/jsx-function-call-newline': 'off', // Not needed
-    '@stylistic/jsx-indent': 'off', // Not needed
     '@stylistic/jsx-indent-props': 'off', // Not needed
     '@stylistic/jsx-max-props-per-line': 'off', // Not needed
     '@stylistic/jsx-newline': 'off', // Not needed
