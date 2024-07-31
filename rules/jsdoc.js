@@ -17,8 +17,10 @@ module.exports = {
     'jsdoc/check-property-names': 'error',
     'jsdoc/check-syntax': 'error',
     'jsdoc/check-tag-names': 'error',
+    'jsdoc/check-template-names': 'error',
     'jsdoc/check-types': 'error',
     'jsdoc/check-values': 'error',
+    'jsdoc/convert-to-jsdoc-comments': 'off', // Seems odd
     'jsdoc/empty-tags': 'error',
     'jsdoc/implements-on-classes': 'error',
     'jsdoc/imports-as-dependencies': 'error',
@@ -58,6 +60,7 @@ module.exports = {
     'jsdoc/require-returns-check': 'error',
     'jsdoc/require-returns-description': 'error',
     'jsdoc/require-returns-type': 'error',
+    'jsdoc/require-template': 'error',
     'jsdoc/require-throws': 'error',
     'jsdoc/require-yields': 'error',
     'jsdoc/require-yields-check': 'error',
