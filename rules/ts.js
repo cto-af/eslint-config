@@ -121,11 +121,12 @@ module.exports = {
     '@typescript-eslint/no-unused-expressions': 'error',
     '@typescript-eslint/no-unused-vars': [
       'error', {
-        args: 'none',
+        args: 'all',
         argsIgnorePattern: '^_',
         caughtErrors: 'all',
         caughtErrorsIgnorePattern: '^(_|ignore)',
-        varsIgnorePattern: '^_',
+        varsIgnorePattern: '^_[^_]',
+        reportUsedIgnorePattern: true,
       },
     ],
     '@typescript-eslint/no-use-before-define': 'error',
