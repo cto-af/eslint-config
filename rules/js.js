@@ -56,11 +56,12 @@ module.exports = {
     'no-unused-private-class-members': 'error',
     'no-unused-vars': [
       'error', {
-        args: 'none',
+        args: 'all',
         argsIgnorePattern: '^_',
         caughtErrors: 'all',
         caughtErrorsIgnorePattern: '^(_|ignore)',
-        varsIgnorePattern: '^_',
+        varsIgnorePattern: '^_[^_]',
+        reportUsedIgnorePattern: true,
       },
     ],
     'no-use-before-define': 'error',
