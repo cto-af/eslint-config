@@ -1,9 +1,9 @@
-'use strict';
+import globals from 'globals';
+import n from 'eslint-plugin-n';
+import {rules} from './rules/js.js';
+import stylistic from '@stylistic/eslint-plugin';
 
-const globals = require('globals');
-const {rules} = require('./rules/js.js');
-
-module.exports = [{
+export default [{
   files: [
     '**/*.js',
     '**/*.cjs',
@@ -11,8 +11,8 @@ module.exports = [{
     '**/*.ts',
   ],
   plugins: {
-    '@stylistic': require('@stylistic/eslint-plugin'),
-    'n': require('eslint-plugin-n'),
+    '@stylistic': stylistic,
+    n,
   },
   languageOptions: {
     globals: globals.node,

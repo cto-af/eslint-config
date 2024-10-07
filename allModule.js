@@ -1,6 +1,7 @@
-'use strict';
+import all from './all.js';
+import mod from './module.js';
 
-module.exports = [
-  ...require('./all.js'),
-  ...require('./module.js'),
+export default [
+  ...all,
+  ...mod,
 ];

@@ -1,7 +1,6 @@
-'use strict';
-const markdown = require('eslint-plugin-markdown');
+import markdown from 'eslint-plugin-markdown';
 
-module.exports = [
+export default [
   {
     files: [
       '**/*.md',
