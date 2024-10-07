@@ -14,7 +14,10 @@
   ],
   "author": "Joe Hildebrand <joe-github@cursive.net>",
   "license": "MIT",
-  "repository": "cto-af/eslint-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cto-af/eslint-config.git"
+  },
   "dependencies": {
     "@eslint/json": "0.5.0",
     "@stylistic/eslint-plugin": "2.9.0",
