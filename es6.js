@@ -1,7 +1,8 @@
-'use strict';
+import index from './index.js';
+import mod from './module.js';
 
 // Turn on es6 modules
-module.exports = [
-  ...require('./index'),
-  ...require('./module'),
+export default [
+  ...index,
+  ...mod,
 ];

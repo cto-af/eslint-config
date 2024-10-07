@@ -1,7 +1,5 @@
-'use strict';
-
-const globals = require('globals');
-const mocha = require('eslint-plugin-mocha');
+import globals from 'globals';
+import mocha from 'eslint-plugin-mocha';
 
 module.exports = [{
   files: [

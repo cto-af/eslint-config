@@ -1,13 +1,22 @@
-'use strict';
+import ava from './ava.js';
+import cjs from './cjs.js';
+import ignores from './ignores.js';
+import js from './js.js';
+import jsdoc from './jsdoc.js';
+import jsdoc_ts from './jsdoc_ts.js';
+import markdown from './markdown.js';
+import mjs from './mjs.js';
+import ts from './ts.js';
 
 // Turn on everything.  Requires all of the optional dependencies.
-module.exports = [
-  ...require('./ignores.js'),
-  ...require('./js'),
-  ...require('./mjs'),
-  ...require('./ts'),
-  ...require('./jsdoc'),
-  ...require('./jsdoc_ts'),
-  ...require('./ava'),
-  ...require('./markdown'),
+export default [
+  ...ignores,
+  ...js,
+  ...mjs,
+  ...cjs,
+  ...ts,
+  ...jsdoc,
+  ...jsdoc_ts,
+  ...ava,
+  ...markdown,
 ];

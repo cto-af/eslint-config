@@ -1,7 +1,7 @@
-'use strict';
+import ava from 'eslint-plugin-ava';
+import {rules} from './rules/ava.js';
 
-const {rules} = require('./rules/ava.js');
-module.exports = [{
+export default [{
   files: [
     '**/test/**.test.*',
     '**/test/**.ava.*',
@@ -11,7 +11,7 @@ module.exports = [{
     '**/ava/**.spec.*',
   ],
   plugins: {
-    ava: require('eslint-plugin-ava'),
+    ava,
   },
   rules,
 }];

@@ -1,9 +1,7 @@
-'use strict';
+import {rules} from './rules/ts.js';
+import tslint from 'typescript-eslint';
 
-const {rules} = require('./rules/ts.js');
-const tslint = require('typescript-eslint');
-
-module.exports = [{
+const blob = {
   files: ['**/*.ts'],
   ignores: [
     'coverage/**',
@@ -12,10 +10,12 @@ module.exports = [{
   ],
   ...tslint.configs.base,
   rules,
-}];
+};
 
-module.exports[0].languageOptions.parserOptions = {
+blob.languageOptions.parserOptions = {
   // It's undefined for now, but just in case.
-  ...module.exports[0].languageOptions.parserOptions,
+  ...blob.languageOptions.parserOptions,
   project: true,
 };
+
+export default [blob];

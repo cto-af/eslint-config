@@ -1,7 +1,6 @@
-'use strict';
-
-module.exports = [{
+export default [{
   ignores: [
+    '**/*.d.ts',
     'coverage/**',
     'node_modules/**',
     'docs/**',
