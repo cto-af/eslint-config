@@ -13,7 +13,7 @@ export default [
     rules,
   },
   {
-    files: ['**/*.jsonc', '.vscode/*.json', 'tsconfig.json'],
+    files: ['**/*.jsonc', '.vscode/*.json', '**/tsconfig.json'],
     language: 'json/jsonc',
     languageOptions: {
       allowTrailingCommas: true,
