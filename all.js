@@ -4,6 +4,7 @@ import ignores from './ignores.js';
 import js from './js.js';
 import jsdoc from './jsdoc.js';
 import jsdoc_ts from './jsdoc_ts.js';
+import json from './json.js';
 import markdown from './markdown.js';
 import mjs from './mjs.js';
 import ts from './ts.js';
@@ -17,6 +18,7 @@ export default [
   ...ts,
   ...jsdoc,
   ...jsdoc_ts,
+  ...json,
   ...ava,
   ...markdown,
 ];

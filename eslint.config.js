@@ -5,6 +5,7 @@ import json from '@eslint/json';
 import meta from '@cto.af/eslint-plugin-meta';
 import mod from './module.js';
 import n from 'eslint-plugin-n';
+import {default as ourJson} from './json.js';
 import {plugin} from 'typescript-eslint';
 import stylistic from '@stylistic/eslint-plugin';
 
@@ -15,6 +16,7 @@ export default [
     ],
   },
   ...all,
+  ...ourJson,
   ...mod,
   {
     files: [
