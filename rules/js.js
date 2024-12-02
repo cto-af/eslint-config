@@ -385,4 +385,7 @@ export const rules = {
   // Not yet
   'n/prefer-promises/dns': 'off',
   'n/prefer-promises/fs': 'off',
+
+  // [ReDoS](https://makenowjust-labs.github.io/recheck/docs/usage/as-eslint-plugin/)
+  'redos/no-vulnerable': 'error',
 };

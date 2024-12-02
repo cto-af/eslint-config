@@ -115,6 +115,7 @@ export const rules = {
   '@typescript-eslint/no-unsafe-function-type': 'error',
   '@typescript-eslint/no-unsafe-member-access': 'off', // Can't config
   '@typescript-eslint/no-unsafe-return': 'off', // Can't config
+  '@typescript-eslint/no-unsafe-type-assertion': 'off', // Used all the time
   '@typescript-eslint/no-unsafe-unary-minus': 'error',
   '@typescript-eslint/no-unused-expressions': 'error',
   '@typescript-eslint/no-unused-vars': [
@@ -153,6 +154,7 @@ export const rules = {
   '@typescript-eslint/prefer-return-this-type': 'off', // Can't config
   '@typescript-eslint/prefer-string-starts-ends-with': 'off', // Can't config
   '@typescript-eslint/promise-function-async': 'off', // Can't config
+  '@typescript-eslint/related-getter-setter-pairs': 'error',
   '@typescript-eslint/require-array-sort-compare': 'off', // Can't config
   '@typescript-eslint/require-await': 'error',
   '@typescript-eslint/restrict-plus-operands': 'off', // Can't config
