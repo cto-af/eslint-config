@@ -7,6 +7,7 @@ import mod from './module.js';
 import n from 'eslint-plugin-n';
 import {default as ourJson} from './json.js';
 import {plugin} from 'typescript-eslint';
+import redos from 'eslint-plugin-redos';
 import stylistic from '@stylistic/eslint-plugin';
 
 export default [
@@ -29,6 +30,7 @@ export default [
           jsdoc,
           json,
           n,
+          redos,
           '@stylistic': stylistic,
           '@typescript-eslint': plugin,
         },
