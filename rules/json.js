@@ -4,4 +4,5 @@ export const rules = {
   'json/no-empty-keys': 'error',
   'json/no-unnormalized-keys': ['error', {form: 'NFD'}],
   'json/no-unsafe-values': 'error',
+  'json/top-level-interop': 'off',
 };
