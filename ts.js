@@ -8,6 +8,19 @@ const blob = {
     'node_modules/**',
     'docs/**',
   ],
+  settings: {
+    n: {
+      // Ensure that importing real .js files works
+      typescriptExtensionMap: [
+        ['', '.js'],
+        ['.js', '.js'],
+        ['.ts', '.js'],
+        ['.cts', '.cjs'],
+        ['.mts', '.mjs'],
+        ['.tsx', '.js'],
+      ],
+    },
+  },
   ...tslint.configs.base,
   rules,
 };
