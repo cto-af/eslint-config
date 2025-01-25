@@ -17,9 +17,14 @@ export default [{
     redos,
   },
   languageOptions: {
-    globals: globals.node,
     ecmaVersion: 2022,
+    globals: globals.node,
     sourceType: 'commonjs',
+  },
+  linterOptions: {
+    noInlineConfig: false,
+    reportUnusedDisableDirectives: 'error',
+    reportUnusedInlineConfigs: 'error',
   },
   rules,
 }];
