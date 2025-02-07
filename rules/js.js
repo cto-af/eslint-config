@@ -356,7 +356,9 @@ export const rules = {
   'n/no-unpublished-require': 'off', // Doesn't work
   'n/no-unsupported-features/es-builtins': 'error',
   'n/no-unsupported-features/es-syntax': 'error',
-  'n/no-unsupported-features/node-builtins': 'error',
+  'n/no-unsupported-features/node-builtins': ['error', {
+    allowExperimental: true,
+  }],
   'n/process-exit-as-throw': 'error',
 
   // [Best Practices](https://github.com/eslint-community/eslint-plugin-n#best-practices)
