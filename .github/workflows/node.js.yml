@@ -22,9 +22,7 @@ jobs:
         with:
           submodules: true
       - name: Install pnpm
-        run: |
-          npm install -g corepack --force
-          corepack enable
+        uses: pnpm/action-setup@v4
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
