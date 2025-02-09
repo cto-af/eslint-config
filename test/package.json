@@ -16,7 +16,7 @@
   "devDependencies": {
     "@cto.af/eslint-config": "link:..",
     "ava": "6.2.0",
-    "eslint": "9.19.0",
+    "eslint": "9.20.0",
     "eslint-plugin-ava": "15.0.1",
     "eslint-plugin-jsdoc": "50.6.3",
     "typescript": "5.7.3",
