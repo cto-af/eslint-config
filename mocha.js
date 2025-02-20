@@ -1,7 +1,7 @@
 import globals from 'globals';
 import mocha from 'eslint-plugin-mocha';
 
-module.exports = [{
+export default [{
   files: [
     'test/**/*.spec.js',
     'test/**/*.spec.ts',
