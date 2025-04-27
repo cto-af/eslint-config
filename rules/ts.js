@@ -29,7 +29,7 @@ export const rules = {
     'minimumDescriptionLength': 3,
   }],
   '@typescript-eslint/ban-tslint-comment': 'error',
-  '@typescript-eslint/class-literal-property-style': ['error', 'getters'],
+  '@typescript-eslint/class-literal-property-style': ['error', 'fields'],
   '@typescript-eslint/class-methods-use-this': 'error',
   '@typescript-eslint/consistent-generic-constructors': [
     'error',
