@@ -1,4 +1,4 @@
-import markdown from 'eslint-plugin-markdown';
+import markdown from '@eslint/markdown';
 
 export default [
   {
