@@ -249,6 +249,7 @@ export const rules = {
   '@typescript-eslint/no-unnecessary-type-arguments': 'off', // Can't config
   '@typescript-eslint/no-unnecessary-type-assertion': 'off', // Can't config
   '@typescript-eslint/no-unnecessary-type-constraint': 'error',
+  '@typescript-eslint/no-unnecessary-type-conversion': 'error',
   '@typescript-eslint/no-unnecessary-type-parameters': 'error', // Warning: preliminary
   '@typescript-eslint/no-unsafe-argument': 'off', // Can't config
   '@typescript-eslint/no-unsafe-assignment': 'off', // Can't config
