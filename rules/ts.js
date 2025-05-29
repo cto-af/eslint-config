@@ -307,7 +307,8 @@ export const rules = {
   '@typescript-eslint/strict-boolean-expressions': 'off', // Can't config
   '@typescript-eslint/switch-exhaustiveness-check': 'off', // Can't config
   '@typescript-eslint/triple-slash-reference': 'error',
-  '@typescript-eslint/typedef': 'error',
+  // Deprecated
+  // '@typescript-eslint/typedef': 'error',
   '@typescript-eslint/unbound-method': 'off', // Can't config
   '@typescript-eslint/unified-signatures': 'off', // Too hard
   '@typescript-eslint/use-unknown-in-catch-callback-variable': 'error',
