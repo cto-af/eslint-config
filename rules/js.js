@@ -352,6 +352,7 @@ export const rules = {
   'n/no-new-require': 'error',
   'n/no-path-concat': 'error',
   'n/no-process-exit': 'off', // No.
+  'n/no-top-level-await': 'error', // My plan: doc all of these.
   'n/no-unpublished-bin': 'error',
   'n/no-unpublished-import': 'off', // Doesn't work
   'n/no-unpublished-require': 'off', // Doesn't work
