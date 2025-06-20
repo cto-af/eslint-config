@@ -1,13 +1,10 @@
+import ignores from './ignores.js';
 import {rules} from './rules/ts.js';
 import tslint from 'typescript-eslint';
 
 const blob = {
   files: ['**/*.ts'],
-  ignores: [
-    'coverage/**',
-    'node_modules/**',
-    'docs/**',
-  ],
+  ...ignores,
   settings: {
     n: {
       // Ensure that importing real .js files works
