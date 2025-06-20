@@ -2,6 +2,7 @@ import all from './all.js';
 import ava from 'eslint-plugin-ava';
 import jsdoc from 'eslint-plugin-jsdoc';
 import json from '@eslint/json';
+import markdown from '@eslint/markdown';
 import meta from '@cto.af/eslint-plugin-meta';
 import mod from './module.js';
 import n from 'eslint-plugin-n';
@@ -29,6 +30,7 @@ export default [
           ava,
           jsdoc,
           json,
+          markdown,
           n,
           redos,
           '@stylistic': stylistic,

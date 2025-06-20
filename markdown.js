@@ -1,4 +1,5 @@
 import markdown from '@eslint/markdown';
+import {rules} from './rules/markdown.js';
 
 export default [
   {
@@ -9,6 +10,7 @@ export default [
       markdown,
     },
     processor: 'markdown/markdown',
+    rules,
   },
   {
     files: [
