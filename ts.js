@@ -4,7 +4,7 @@ import tslint from 'typescript-eslint';
 
 const blob = {
   files: ['**/*.ts'],
-  ...ignores,
+  ignores: ignores[0].ignores,
   settings: {
     n: {
       // Ensure that importing real .js files works
