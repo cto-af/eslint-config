@@ -29,6 +29,7 @@ export default [
       'unicode-bom': 'off',
       'no-console': 'off',
       'n/no-missing-import': 'off',
+      'n/no-top-level-await': 'off',
     },
   },
 ];
