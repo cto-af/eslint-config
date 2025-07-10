@@ -78,7 +78,7 @@ export const rules = {
   'camelcase': 'off', // If I had started with this.
   'capitalized-comments': ['error', 'always', {
     ignoreConsecutiveComments: true,
-    ignorePattern: 'c8',
+    ignorePattern: '(c8|webpackIgnore)',
   }],
   'class-methods-use-this': 'warn',
   // This one is pedantic even for me.
@@ -240,7 +240,6 @@ export const rules = {
   '@stylistic/curly-newline': 'off', // Too much config
   '@stylistic/dot-location': ['error', 'property'],
   '@stylistic/eol-last': 'error',
-  '@stylistic/func-call-spacing': 'off', // Renamed
   '@stylistic/function-call-argument-newline': ['error', 'consistent'],
   '@stylistic/function-call-spacing': 'error',
   '@stylistic/function-paren-newline': ['error', 'consistent'],
