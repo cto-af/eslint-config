@@ -323,7 +323,12 @@ export const rules = {
   '@stylistic/semi-spacing': 'error',
   '@stylistic/semi-style': ['error'],
   '@stylistic/space-before-blocks': 'error',
-  '@stylistic/space-before-function-paren': ['error', 'never'],
+  '@stylistic/space-before-function-paren': ['error', {
+    anonymous: 'never',
+    named: 'never',
+    asyncArrow: 'always',
+    catch: 'always',
+  }],
   '@stylistic/space-in-parens': 'error',
   '@stylistic/space-infix-ops': ['error', {int32Hint: false}],
   '@stylistic/space-unary-ops': 'error',
