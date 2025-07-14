@@ -16,6 +16,7 @@ export const rules = {
   'markdown/no-missing-link-fragments': 'error',
   'markdown/no-multiple-h1': 'error',
   'markdown/no-reversed-media-syntax': 'error',
+  'markdown/no-unused-definitions': 'error',
   'markdown/require-alt-text': 'warn',
   'markdown/table-column-count': 'error',
 };
