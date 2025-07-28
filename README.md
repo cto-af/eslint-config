@@ -33,7 +33,11 @@ export default es6;
 
 ## TS Project:
 
-eslint.config.js:
+Run:
+
+`npm install -D typescript-eslint`
+
+Then in eslint.config.js:
 
 ```mjs
 import es6 from '@cto.af/eslint-config/es6.js';
@@ -41,11 +45,16 @@ import ts from '@cto.af/eslint-config/ts.js';
 
 export default [
   ...es6,
-  ts,
+  ...ts,
 ];
 ```
 
 ## Turn on everything:
+
+
+Run:
+
+`npm install -D typescript-eslint eslint-plugin-ava eslint-plugin-jsdoc @eslint/markdown`
 
 eslint.config.js:
 
@@ -55,6 +64,6 @@ import mod from '@cto.af/eslint-config/module.js';
 
 export default [
   ...all,
-  mod,
+  ...mod,
 ];
 ```
