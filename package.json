@@ -19,23 +19,23 @@
     "url": "git+https://github.com/cto-af/eslint-config.git"
   },
   "dependencies": {
-    "@eslint/json": "0.13.1",
-    "@stylistic/eslint-plugin": "5.2.2",
+    "@eslint/json": "0.13.2",
+    "@stylistic/eslint-plugin": "5.3.1",
     "eslint-plugin-n": "17.21.3",
     "eslint-plugin-redos": "4.4.5",
     "globals": "16.3.0"
   },
   "devDependencies": {
-    "@cto.af/eslint-plugin-meta": "2.0.2",
-    "@eslint/markdown": "^7.1.0",
-    "eslint": "^9.32.0",
+    "@cto.af/eslint-plugin-meta": "2.0.3",
+    "@eslint/markdown": "^7.2.0",
+    "eslint": "^9.35.0",
     "eslint-plugin-ava": "^15.1.0",
-    "eslint-plugin-jsdoc": "^52.0.2",
+    "eslint-plugin-jsdoc": "^54.5.0",
     "eslint-plugin-mocha": "11.1.0",
     "typescript": "5.9.2",
-    "typescript-eslint": "^8.39.0"
+    "typescript-eslint": "^8.42.0"
   },
-  "packageManager": "pnpm@10.14.0",
+  "packageManager": "pnpm@10.15.1",
   "engines": {
     "node": ">=20"
   }

@@ -204,6 +204,7 @@ export const rules = {
   'prefer-rest-params': 'error',
   'prefer-spread': 'error',
   'prefer-template': 'error',
+  'preserve-caught-error': 'error',
   'radix': 'error',
   'require-await': 'error',
   'require-unicode-regexp': 'off', // No.
@@ -262,7 +263,7 @@ export const rules = {
   '@stylistic/jsx-newline': 'off', // Not needed
   '@stylistic/jsx-one-expression-per-line': 'off', // Not needed
   '@stylistic/jsx-pascal-case': 'off', // Not needed
-  '@stylistic/jsx-props-no-multi-spaces': 'off', // Not needed
+  // '@stylistic/jsx-props-no-multi-spaces': 'off', // Deprecated
   '@stylistic/jsx-quotes': 'off', // Not needed
   '@stylistic/jsx-self-closing-comp': 'off', // Not needed
   '@stylistic/jsx-sort-props': 'off', // Not needed
