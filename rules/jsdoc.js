@@ -35,6 +35,9 @@ export const rules = {
   'jsdoc/no-restricted-syntax': 'off',
   'jsdoc/no-types': 'off',
   'jsdoc/no-undefined-types': 'off', // Use typedoc
+  'jsdoc/prefer-import-tag': 'error',
+  'jsdoc/reject-any-type': 'warn',
+  'jsdoc/reject-function-type': 'off', // I use this.
   'jsdoc/require-asterisk-prefix': 'error',
   'jsdoc/require-description': ['error', {exemptedBy: ['inheritdoc', 'private', 'ignore']}],
   'jsdoc/require-description-complete-sentence': 'error',
@@ -44,6 +47,8 @@ export const rules = {
   'jsdoc/require-jsdoc': ['error', {
     publicOnly: {ancestorsOnly: true},
   }],
+  'jsdoc/require-next-description': 'off', // Not used by typedoc
+  'jsdoc/require-next-type': 'off', // Not used by typedoc
   'jsdoc/require-param': ['error', {exemptedBy: ['inheritdoc', 'private', 'ignore']}],
   'jsdoc/require-param-description': 'error',
   'jsdoc/require-param-name': 'error',
@@ -58,12 +63,18 @@ export const rules = {
   'jsdoc/require-returns-check': 'error',
   'jsdoc/require-returns-description': 'error',
   'jsdoc/require-returns-type': 'error',
+  'jsdoc/require-tags': 'off', // Not useful
   'jsdoc/require-template': 'error',
   'jsdoc/require-throws': 'error',
+  'jsdoc/require-throws-description': 'error',
+  'jsdoc/require-throws-type': 'error',
   'jsdoc/require-yields': 'error',
   'jsdoc/require-yields-check': 'error',
+  'jsdoc/require-yields-description': 'error',
+  'jsdoc/require-yields-type': 'error',
   'jsdoc/sort-tags': 'error',
   'jsdoc/tag-lines': 'off',
   'jsdoc/text-escaping': 'off', // Painful
+  'jsdoc/type-formatting': 'off', // Experimental
   'jsdoc/valid-types': 'error',
 };

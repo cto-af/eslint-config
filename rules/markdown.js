@@ -15,6 +15,7 @@ export const rules = {
   'markdown/no-missing-label-refs': 'error',
   'markdown/no-missing-link-fragments': 'error',
   'markdown/no-multiple-h1': 'error',
+  'markdown/no-reference-like-urls': 'error',
   'markdown/no-reversed-media-syntax': 'error',
   'markdown/no-space-in-emphasis': 'error',
   'markdown/no-unused-definitions': 'error',
