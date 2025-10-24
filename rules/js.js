@@ -292,6 +292,7 @@ export const rules = {
     ignoreStrings: true,
     ignoreTemplateLiterals: true,
     ignoreUrls: true,
+    ignorePattern: '^\\s*\\/\\/ eslint-',
   }],
   '@stylistic/max-statements-per-line': 'off',
   '@stylistic/member-delimiter-style': 'off',
