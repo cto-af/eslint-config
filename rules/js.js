@@ -241,6 +241,7 @@ export const rules = {
   '@stylistic/curly-newline': 'off', // Too much config
   '@stylistic/dot-location': ['error', 'property'],
   '@stylistic/eol-last': 'error',
+  '@stylistic/exp-list-style': 'off', // Still experimental
   '@stylistic/function-call-argument-newline': ['error', 'consistent'],
   '@stylistic/function-call-spacing': 'error',
   '@stylistic/function-paren-newline': ['error', 'consistent'],

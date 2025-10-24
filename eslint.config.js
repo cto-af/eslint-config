@@ -1,3 +1,4 @@
+import {defineConfig, globalIgnores} from 'eslint/config';
 import all from './all.js';
 import ava from 'eslint-plugin-ava';
 import jsdoc from 'eslint-plugin-jsdoc';
@@ -11,15 +12,11 @@ import {plugin} from 'typescript-eslint';
 import redos from 'eslint-plugin-redos';
 import stylistic from '@stylistic/eslint-plugin';
 
-export default [
-  {
-    ignores: [
-      'test/**',
-    ],
-  },
-  ...all,
-  ...ourJson,
-  ...mod,
+export default defineConfig(
+  globalIgnores(['test/**']),
+  all,
+  ourJson,
+  mod,
   {
     files: [
       'rules/*.js',
@@ -39,5 +36,5 @@ export default [
       },
     },
     ...meta.configs.all,
-  },
-];
+  }
+);

@@ -19,6 +19,7 @@ export const rules = {
   'jsdoc/check-values': 'error',
   'jsdoc/convert-to-jsdoc-comments': 'off', // Seems odd
   'jsdoc/empty-tags': 'error',
+  'jsdoc/escape-inline-tags': 'warn', // Provisional.
   'jsdoc/implements-on-classes': 'error',
   'jsdoc/imports-as-dependencies': 'error',
   'jsdoc/informative-docs': 'off', // This sounds annoying
@@ -65,6 +66,7 @@ export const rules = {
   'jsdoc/require-returns-type': 'error',
   'jsdoc/require-tags': 'off', // Not useful
   'jsdoc/require-template': 'error',
+  'jsdoc/require-template-description': 'error',
   'jsdoc/require-throws': 'error',
   'jsdoc/require-throws-description': 'error',
   'jsdoc/require-throws-type': 'error',
@@ -75,6 +77,10 @@ export const rules = {
   'jsdoc/sort-tags': 'error',
   'jsdoc/tag-lines': 'off',
   'jsdoc/text-escaping': 'off', // Painful
+  'jsdoc/ts-method-signature-style': ['error', 'method'],
+  'jsdoc/ts-no-empty-object-type': 'error',
+  'jsdoc/ts-no-unnecessary-template-expression': 'error',
+  'jsdoc/ts-prefer-function-type': 'error',
   'jsdoc/type-formatting': 'off', // Experimental
-  'jsdoc/valid-types': 'error',
+  'jsdoc/valid-types': 'off', // Let TS check.
 };
