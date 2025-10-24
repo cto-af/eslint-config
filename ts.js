@@ -28,4 +28,24 @@ blob.languageOptions.parserOptions = {
   project: true,
 };
 
-export default [blob];
+// Allow importing .ts files directly in tests, for now.
+const testBlob = {...blob};
+testBlob.files = ['test/**/*.ts'];
+testBlob.settings = {
+  n: {
+    // Ensure that importing real .js files works
+    typescriptExtensionMap: [
+      ['', '.js'],
+      ['.js', '.js'],
+      ['.ts', '.ts'],
+      ['.cts', '.cjs'],
+      ['.mts', '.mjs'],
+      ['.tsx', '.js'],
+    ],
+  },
+};
+
+export default [
+  blob,
+  testBlob,
+];
