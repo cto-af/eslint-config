@@ -30,7 +30,7 @@ blob.languageOptions.parserOptions = {
 
 // Allow importing .ts files directly in tests, for now.
 const testBlob = {...blob};
-testBlob.files = ['test/**/*.ts'];
+testBlob.files = ['**/test/**/*.ts'];
 testBlob.settings = {
   n: {
     // Ensure that importing real .js files works
