@@ -1,5 +1,7 @@
 /* eslint meta/no-unused-rules: ["error", {ignore: ["n"]}] */
 
+/** @import {RulesConfig} from '@eslint/core' */
+/** @type {Partial<RulesConfig>}*/
 export const rules = {
   // [ava](https://github.com/avajs/eslint-plugin-ava?tab=readme-ov-file#rules)
   'ava/assertion-arguments': 'error',

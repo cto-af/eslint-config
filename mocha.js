@@ -1,7 +1,8 @@
+import {defineConfig} from 'eslint/config';
 import globals from 'globals';
 import mocha from 'eslint-plugin-mocha';
 
-export default [{
+export default defineConfig({
   files: [
     'test/**/*.spec.js',
     'test/**/*.spec.ts',
@@ -31,4 +32,4 @@ export default [{
     ...mocha.configs.recommended.rules,
     'mocha/no-mocha-arrows': 'off',
   },
-}];
+});

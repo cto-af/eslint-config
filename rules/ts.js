@@ -3,13 +3,17 @@ import ts from 'typescript-eslint';
 
 const originalDisabled = {};
 builtinRules.forEach((_, r) => {
+  // @ts-expect-error TODO(hildjj): fix types
   if (ts.plugin.rules[r]) {
+    // @ts-expect-error TODO(hildjj): fix types
     originalDisabled[r] = 'off';
   }
 });
 
 /* eslint meta/no-unused-rules: ["error", {ignore: ["@stylistic"]}] */
 
+/** @import {RulesConfig} from '@eslint/core' */
+/** @type {Partial<RulesConfig>}*/
 export const rules = {
   // [original disabled for extension](https://typescript-eslint.io/rules/?=extension#extension-rules)
   ...originalDisabled,

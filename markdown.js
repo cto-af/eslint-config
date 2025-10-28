@@ -1,7 +1,8 @@
+import {defineConfig} from 'eslint/config';
 import markdown from '@eslint/markdown';
 import {rules} from './rules/markdown.js';
 
-export default [
+export default defineConfig(
   {
     files: [
       '**/*.md',
@@ -33,5 +34,5 @@ export default [
       'n/no-missing-import': 'off',
       'n/no-top-level-await': 'off',
     },
-  },
-];
+  }
+);

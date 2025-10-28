@@ -30,12 +30,12 @@
     "@eslint/markdown": "^7.5.0",
     "eslint": "^9.38.0",
     "eslint-plugin-ava": "^15.1.0",
-    "eslint-plugin-jsdoc": "^61.1.7",
+    "eslint-plugin-jsdoc": "^61.1.10",
     "eslint-plugin-mocha": "11.2.0",
     "typescript": "5.9.3",
     "typescript-eslint": "^8.46.2"
   },
-  "packageManager": "pnpm@10.19.0",
+  "packageManager": "pnpm@10.20.0",
   "engines": {
     "node": ">=20"
   }

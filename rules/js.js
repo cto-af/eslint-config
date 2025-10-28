@@ -1,3 +1,5 @@
+/** @import {RulesConfig} from '@eslint/core' */
+/** @type {Partial<RulesConfig>}*/
 export const rules = {
   // [Possible Problems](https://eslint.org/docs/rules/#possible-problems)
   'array-callback-return': ['error', {allowImplicit: true}],

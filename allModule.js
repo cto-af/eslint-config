@@ -1,7 +1,8 @@
 import all from './all.js';
+import {defineConfig} from 'eslint/config';
 import mod from './module.js';
 
-export default [
-  ...all,
-  ...mod,
-];
+export default defineConfig(
+  all,
+  mod
+);

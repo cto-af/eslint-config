@@ -1,3 +1,5 @@
+/** @import {RulesConfig} from '@eslint/core' */
+/** @type {Partial<RulesConfig>}*/
 export const rules = {
   // [Rules](https://github.com/eslint/json?tab=readme-ov-file#rules)
   'json/no-duplicate-keys': 'error',

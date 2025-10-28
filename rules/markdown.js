@@ -1,3 +1,5 @@
+/** @import {RulesConfig} from '@eslint/core' */
+/** @type {Partial<RulesConfig>}*/
 export const rules = {
   // Check: markdown
   // [Rules](https://github.com/eslint/markdown?tab=readme-ov-file#rules)
