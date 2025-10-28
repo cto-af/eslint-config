@@ -1,4 +1,6 @@
-export default [{
+import {defineConfig} from 'eslint/config';
+
+export default defineConfig({
   files: [
     '**/*.ts',
   ],
@@ -7,4 +9,4 @@ export default [{
     'jsdoc/require-param-type': 'off', // Not needed in TS
     'jsdoc/require-returns-type': 'off', // Not needed in TS
   },
-}];
+});

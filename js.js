@@ -1,10 +1,11 @@
+import {defineConfig} from 'eslint/config';
 import globals from 'globals';
 import n from 'eslint-plugin-n';
 import redos from 'eslint-plugin-redos';
 import {rules} from './rules/js.js';
 import stylistic from '@stylistic/eslint-plugin';
 
-export default [
+export default defineConfig(
   {
     files: [
       '**/*.js',
@@ -37,5 +38,5 @@ export default [
       'no-console': 'off',
       'n/no-top-level-await': 'off',
     },
-  },
-];
+  }
+);

@@ -1,4 +1,6 @@
-export default [{
+import {defineConfig} from 'eslint/config';
+
+export default defineConfig({
   files: [
     '**/*.mjs',
     '**/*.ts',
@@ -6,4 +8,4 @@ export default [{
   languageOptions: {
     sourceType: 'module',
   },
-}];
+});

@@ -1,7 +1,8 @@
+import {defineConfig} from 'eslint/config';
 import jsdoc from 'eslint-plugin-jsdoc';
 import {rules} from './rules/jsdoc.js';
 
-export default [{
+export default defineConfig({
   files: [
     '**/*.js',
     '**/*.cjs',
@@ -19,4 +20,4 @@ export default [{
     },
   },
   rules,
-}];
+});

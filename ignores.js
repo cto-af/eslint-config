@@ -1,8 +1,8 @@
-export default [{
-  ignores: [
-    '**/*.d.ts',
-    'coverage/**',
-    'node_modules/**',
-    'docs/**',
-  ],
-}];
+import {globalIgnores} from 'eslint/config';
+
+export default globalIgnores([
+  '**/*.d.ts',
+  '**/coverage/**',
+  '**/node_modules/**',
+  '**/docs/**',
+]);

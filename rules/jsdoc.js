@@ -1,3 +1,5 @@
+/** @import {RulesConfig} from '@eslint/core' */
+/** @type {Partial<RulesConfig>}*/
 export const rules = {
   // Check: jsdoc
   // [Stylistic Issues](https://eslint.org/docs/rules/#stylistic-issues)

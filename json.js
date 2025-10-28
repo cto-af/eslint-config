@@ -1,7 +1,8 @@
+import {defineConfig} from 'eslint/config';
 import json from '@eslint/json';
 import {rules} from './rules/json.js';
 
-export default [
+export default defineConfig(
   {
     plugins: {
       json,
@@ -24,5 +25,5 @@ export default [
     files: ['**/*.json5'],
     language: 'json/json5',
     rules,
-  },
-];
+  }
+);

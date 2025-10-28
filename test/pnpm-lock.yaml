@@ -21,8 +21,8 @@ importers:
         specifier: 15.1.0
         version: 15.1.0(eslint@9.38.0)
       eslint-plugin-jsdoc:
-        specifier: 61.1.7
-        version: 61.1.7(eslint@9.38.0)
+        specifier: 61.1.10
+        version: 61.1.10(eslint@9.38.0)
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -36,8 +36,8 @@ packages:
     resolution: {integrity: sha512-g+RihtzFgGTx2WYCuTHbdOXJeAlGnROws0TeALx9ow/ZmOROOZkVg5wp/B44n0WJgI4SQFP1eWM2iRPlU2Y14w==}
     engines: {node: '>=20.11.0'}
 
-  '@es-joy/resolve.exports@1.0.0':
-    resolution: {integrity: sha512-bbrmzsAZ9GA/3oBS6r8PWMtZarEhKHr413hak8ArwMEZ5DtaLErnkcyEWUsXy7urBcmVu/TpDzHPDVM5uIbx9A==}
+  '@es-joy/resolve.exports@1.2.0':
+    resolution: {integrity: sha512-Q9hjxWI5xBM+qW2enxfe8wDKdFWMfd0Z29k5ZJnuBqD/CasY5Zryj09aCA6owbGATWz+39p5uIdaHXpopOcG8g==}
     engines: {node: '>=10'}
 
   '@eslint-community/eslint-utils@4.9.0':
@@ -455,8 +455,8 @@ packages:
     peerDependencies:
       eslint: '>=9'
 
-  eslint-plugin-jsdoc@61.1.7:
-    resolution: {integrity: sha512-AqNPHbIVkO39jPR6HOeA2v/DQsNxjtx4d+KaimrbxFDfcXTrEcq85orGIXMthAvtcw93hJGcNl77q2fxbp7Org==}
+  eslint-plugin-jsdoc@61.1.10:
+    resolution: {integrity: sha512-ACsczYGax1Iu9zRBiG176I66cgL2nRt1TbMgE9TAzxoGKfBD9PjhA//K/JKk3uBk25RsYHj3TqMaAiy913IpEA==}
     engines: {node: '>=20.11.0'}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
@@ -752,8 +752,8 @@ packages:
     resolution: {integrity: sha512-BUiRtTtV39LIJwinWBjqVsU9xhdnz7/i889V859IBFpuqGAj6LuOvHv5XLbgZ2R7ptJoJaEcxkv88/h25T7Ciw==}
     engines: {node: '>=8'}
 
-  memoize@10.1.0:
-    resolution: {integrity: sha512-MMbFhJzh4Jlg/poq1si90XRlTZRDHVqdlz2mPyGJ6kqMpyHUyVpDd5gpFAvVehW64+RA1eKE9Yt8aSLY7w2Kgg==}
+  memoize@10.2.0:
+    resolution: {integrity: sha512-DeC6b7QBrZsRs3Y02A6A7lQyzFbsQbqgjI6UW0GigGWV+u1s25TycMr0XHZE4cJce7rY/vyw2ctMQqfDkIhUEA==}
     engines: {node: '>=18'}
 
   merge2@1.4.1:
@@ -905,8 +905,8 @@ packages:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
     engines: {node: '>=0.10.0'}
 
-  reserved-identifiers@1.1.0:
-    resolution: {integrity: sha512-203KzrGTMKVIMmWpNvGpd9DURZDYeC4pDAU9kx2Y4sr+LC8r5noya8Nxptif8kClif/F4VDNsqhulZ/TosEP1Q==}
+  reserved-identifiers@1.2.0:
+    resolution: {integrity: sha512-yE7KUfFvaBFzGPs5H3Ops1RevfUEsDc5Iz65rOwWg4lE8HJSYtle77uul3+573457oHvBKuHYDl/xqUkKpEEdw==}
     engines: {node: '>=18'}
 
   resolve-cwd@3.0.0:
@@ -1122,7 +1122,7 @@ snapshots:
       esquery: 1.6.0
       jsdoc-type-pratt-parser: 6.10.0
 
-  '@es-joy/resolve.exports@1.0.0': {}
+  '@es-joy/resolve.exports@1.2.0': {}
 
   '@eslint-community/eslint-utils@4.9.0(eslint@9.38.0)':
     dependencies:
@@ -1427,7 +1427,7 @@ snapshots:
       is-plain-object: 5.0.0
       is-promise: 4.0.0
       matcher: 5.0.0
-      memoize: 10.1.0
+      memoize: 10.2.0
       ms: 2.1.3
       p-map: 7.0.3
       package-config: 5.0.0
@@ -1588,10 +1588,10 @@ snapshots:
       pkg-dir: 5.0.0
       resolve-from: 5.0.0
 
-  eslint-plugin-jsdoc@61.1.7(eslint@9.38.0):
+  eslint-plugin-jsdoc@61.1.10(eslint@9.38.0):
     dependencies:
       '@es-joy/jsdoccomment': 0.76.0
-      '@es-joy/resolve.exports': 1.0.0
+      '@es-joy/resolve.exports': 1.2.0
       are-docs-informative: 0.0.2
       comment-parser: 1.4.1
       debug: 4.4.3
@@ -1886,7 +1886,7 @@ snapshots:
     dependencies:
       blueimp-md5: 2.19.0
 
-  memoize@10.1.0:
+  memoize@10.2.0:
     dependencies:
       mimic-function: 5.0.1
 
@@ -2006,7 +2006,7 @@ snapshots:
 
   require-directory@2.1.1: {}
 
-  reserved-identifiers@1.1.0: {}
+  reserved-identifiers@1.2.0: {}
 
   resolve-cwd@3.0.0:
     dependencies:
@@ -2116,7 +2116,7 @@ snapshots:
   to-valid-identifier@1.0.0:
     dependencies:
       '@sindresorhus/base62': 1.0.0
-      reserved-identifiers: 1.1.0
+      reserved-identifiers: 1.2.0
 
   tr46@0.0.3: {}
 
