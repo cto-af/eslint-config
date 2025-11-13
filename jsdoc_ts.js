@@ -5,8 +5,20 @@ export default defineConfig({
     '**/*.ts',
   ],
   rules: {
+    'jsdoc/no-types': 'error', // Type info comes from TS
     'jsdoc/no-undefined-types': 'off', // Switch to typedoc
-    'jsdoc/require-param-type': 'off', // Not needed in TS
-    'jsdoc/require-returns-type': 'off', // Not needed in TS
+    'jsdoc/require-next-type': 'off',
+    'jsdoc/require-param-type': 'off',
+    'jsdoc/require-property-type': 'off',
+    'jsdoc/require-returns-type': 'off',
+    'jsdoc/require-returns': ['error', {
+      checkConstructors: false,
+      checkGetters: false,
+      forceRequireReturn: false,
+      forceReturnsWithAsync: false,
+      publicOnly: true,
+    }],
+    'jsdoc/require-throws-type': 'off',
+    'jsdoc/require-yields-type': 'off',
   },
 });
