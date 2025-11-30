@@ -18,6 +18,7 @@ export default defineConfig({
       forceReturnsWithAsync: false,
       publicOnly: true,
     }],
+    'jsdoc/require-template': 'off',
     'jsdoc/require-throws-type': 'off',
     'jsdoc/require-yields-type': 'off',
   },
