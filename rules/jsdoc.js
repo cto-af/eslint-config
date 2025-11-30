@@ -60,6 +60,7 @@ export const rules = {
   'jsdoc/require-property-description': 'error',
   'jsdoc/require-property-name': 'error',
   'jsdoc/require-property-type': 'error',
+  'jsdoc/require-rejects': 'off', // Sounds like a pain.
   'jsdoc/require-returns': ['error', {
     exemptedBy: ['ignore'],
   }],
