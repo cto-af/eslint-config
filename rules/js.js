@@ -269,7 +269,7 @@ export const rules = {
   // '@stylistic/jsx-props-no-multi-spaces': 'off', // Deprecated
   '@stylistic/jsx-quotes': 'off', // Not needed
   '@stylistic/jsx-self-closing-comp': 'off', // Not needed
-  '@stylistic/jsx-sort-props': 'off', // Not needed
+  // '@stylistic/jsx-sort-props': 'off', // Deprecated
   '@stylistic/jsx-tag-spacing': 'off', // Not needed
   '@stylistic/jsx-wrap-multilines': 'off', // Not needed
 
