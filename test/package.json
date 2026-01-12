@@ -12,14 +12,14 @@
   "keywords": [],
   "author": "Joe Hildebrand <joe-github@cursive.net>",
   "license": "MIT",
-  "packageManager": "pnpm@10.22.0",
+  "packageManager": "pnpm@10.28.0",
   "devDependencies": {
     "@cto.af/eslint-config": "link:..",
     "ava": "6.4.1",
-    "eslint": "9.39.1",
+    "eslint": "9.39.2",
     "eslint-plugin-ava": "15.1.0",
-    "eslint-plugin-jsdoc": "61.2.1",
+    "eslint-plugin-jsdoc": "62.0.0",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.46.4"
+    "typescript-eslint": "8.53.0"
   }
 }
