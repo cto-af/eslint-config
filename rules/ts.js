@@ -279,7 +279,7 @@ export const rules = {
   ],
   '@typescript-eslint/no-use-before-define': 'error',
   '@typescript-eslint/no-useless-constructor': 'error',
-  '@typescript-eslint/no-useless-default-assignment': 'error',
+  '@typescript-eslint/no-useless-default-assignment': 'off', // I prefer both belt and suspenders
   '@typescript-eslint/no-useless-empty-export': 'error',
   '@typescript-eslint/no-wrapper-object-types': 'error', // Turn off in cbor projects
   '@typescript-eslint/non-nullable-type-assertion-style': 'off', // Can't config
@@ -311,7 +311,7 @@ export const rules = {
   '@typescript-eslint/restrict-template-expressions': 'off', // Can't config
   '@typescript-eslint/return-await': 'error',
   '@typescript-eslint/strict-boolean-expressions': 'off', // Can't config
-  '@typescript-eslint/strict-void-return': 'error',
+  '@typescript-eslint/strict-void-return': 'off', // Can't configure to except event handlers
   '@typescript-eslint/switch-exhaustiveness-check': 'off', // Can't config
   '@typescript-eslint/triple-slash-reference': 'error',
   // Deprecated
