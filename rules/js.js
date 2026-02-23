@@ -243,6 +243,7 @@ export const rules = {
   '@stylistic/curly-newline': 'off', // Too much config
   '@stylistic/dot-location': ['error', 'property'],
   '@stylistic/eol-last': 'error',
+  '@stylistic/exp-jsx-props-style': 'off', // JSX
   '@stylistic/exp-list-style': 'off', // Still experimental
   '@stylistic/function-call-argument-newline': ['error', 'consistent'],
   '@stylistic/function-call-spacing': 'error',
@@ -389,9 +390,11 @@ export const rules = {
   'n/no-sync': 'off',
   'n/prefer-global/buffer': ['error', 'never'],
   'n/prefer-global/console': 'off', // Hopefully only used in tests and cli
+  'n/prefer-global/crypto': ['error', 'always'],
   'n/prefer-global/process': 'off',
   'n/prefer-global/text-decoder': ['error', 'always'],
   'n/prefer-global/text-encoder': ['error', 'always'],
+  'n/prefer-global/timers': 'error',
   'n/prefer-global/url': ['error', 'always'],
   'n/prefer-global/url-search-params': ['error', 'always'],
   'n/prefer-node-protocol': 'error', // Turn off when needed
