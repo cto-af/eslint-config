@@ -4,6 +4,7 @@ export const rules = {
   // Check: markdown
   // [Rules](https://github.com/eslint/markdown?tab=readme-ov-file#rules)
   'markdown/fenced-code-language': 'error',
+  'markdown/fenced-code-meta': 'off', // Might want to use meta sometimes
   'markdown/heading-increment': 'error',
   'markdown/no-bare-urls': 'error',
   'markdown/no-duplicate-definitions': 'error',
