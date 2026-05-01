@@ -19,7 +19,7 @@ export default defineConfig(
       redos,
     },
     languageOptions: {
-      ecmaVersion: 2022,
+      ecmaVersion: 2025,
       globals: globals.node,
       sourceType: 'commonjs',
     },
