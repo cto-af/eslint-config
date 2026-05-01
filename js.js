@@ -1,11 +1,13 @@
 import {defineConfig} from 'eslint/config';
 import globals from 'globals';
+import ignores from './ignores.js';
 import n from 'eslint-plugin-n';
 import redos from 'eslint-plugin-redos';
 import {rules} from './rules/js.js';
 import stylistic from '@stylistic/eslint-plugin';
 
 export default defineConfig(
+  ignores,
   {
     files: [
       '**/*.js',

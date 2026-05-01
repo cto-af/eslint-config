@@ -5,4 +5,5 @@ export default globalIgnores([
   '**/coverage/**',
   '**/node_modules/**',
   '**/docs/**',
+  '.pnpm-store/**',
 ]);
