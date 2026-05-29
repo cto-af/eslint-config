@@ -19,7 +19,7 @@
     "url": "git+https://github.com/cto-af/eslint-config.git"
   },
   "dependencies": {
-    "@eslint/json": "~1.2.0",
+    "@eslint/json": "~2.0.0",
     "@stylistic/eslint-plugin": "~5.10.0",
     "eslint-plugin-n": "~17.24.0",
     "eslint-plugin-redos": "~4.5.0",

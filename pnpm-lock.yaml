@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@eslint/json':
-        specifier: ~1.2.0
-        version: 1.2.0
+        specifier: ~2.0.0
+        version: 2.0.0
       '@stylistic/eslint-plugin':
         specifier: ~5.10.0
         version: 5.10.0(eslint@10.3.0)
@@ -89,6 +89,10 @@ packages:
 
   '@eslint/json@1.2.0':
     resolution: {integrity: sha512-CEFEyNgvzu8zn5QwVYDg3FaG+ZKUeUsNYitFpMYJAqoAlnw68EQgNbUfheSmexZr4n0wZPrAkPLuvsLaXO6wRw==}
+    engines: {node: ^20.19.0 || ^22.13.0 || >=24}
+
+  '@eslint/json@2.0.0':
+    resolution: {integrity: sha512-P32ZJMIopNWQd1SFhd0tgjfA/hgzUuVSqHmMi2273QaLWHWimXq6V+qL4DNKnjGzO/aNECtYW+rEJ/pWB6uP+w==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
 
   '@eslint/markdown@8.0.1':
@@ -899,6 +903,13 @@ snapshots:
     dependencies:
       '@eslint/core': 1.2.1
       '@eslint/plugin-kit': 0.6.1
+      '@humanwhocodes/momoa': 3.3.10
+      natural-compare: 1.4.0
+
+  '@eslint/json@2.0.0':
+    dependencies:
+      '@eslint/core': 1.2.1
+      '@eslint/plugin-kit': 0.7.1
       '@humanwhocodes/momoa': 3.3.10
       natural-compare: 1.4.0
 
