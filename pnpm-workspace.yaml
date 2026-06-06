@@ -1,0 +1,6 @@
+packages:
+  - .
+  - test
+linkWorkspacePackages: true
+minimumReleaseAgeExclude:
+  - eslint-plugin-jsdoc@63.0.2

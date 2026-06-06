@@ -9,5 +9,3 @@ jobs:
     uses: cto-af/workflows/.github/workflows/node-ci.yml@main
     with:
       script: ci
-    secrets:
-      CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
