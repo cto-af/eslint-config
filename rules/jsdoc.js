@@ -38,6 +38,8 @@ export const rules = {
   'jsdoc/no-restricted-syntax': 'off',
   'jsdoc/no-types': 'off',
   'jsdoc/no-undefined-types': 'off', // Use typedoc
+  'jsdoc/no-unnecessary-type-assertion': 'off', // Requires config
+  'jsdoc/normalize-see-links': 'error',
   'jsdoc/prefer-import-tag': 'error',
   'jsdoc/reject-any-type': 'warn',
   'jsdoc/reject-function-type': 'off', // I use this.
@@ -80,6 +82,7 @@ export const rules = {
   'jsdoc/sort-tags': 'error',
   'jsdoc/tag-lines': 'off',
   'jsdoc/text-escaping': 'off', // Painful
+  'jsdoc/ts-ban-ts-comment': 'off', // Handled by typescript-eslint
   'jsdoc/ts-method-signature-style': ['error', 'method'],
   'jsdoc/ts-no-empty-object-type': 'error',
   'jsdoc/ts-no-unnecessary-template-expression': 'error',

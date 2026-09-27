@@ -397,8 +397,10 @@ export const rules = {
   'n/prefer-global/timers': 'error',
   'n/prefer-global/url': ['error', 'always'],
   'n/prefer-global/url-search-params': ['error', 'always'],
+  'n/prefer-import/assert-strict': 'error',
   'n/prefer-node-protocol': 'error', // Turn off when needed
   // Not yet
+  'n/prefer-process-get-builtin-module': 'off',
   'n/prefer-promises/dns': 'off',
   'n/prefer-promises/fs': 'off',
 

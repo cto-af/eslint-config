@@ -222,12 +222,12 @@ export const rules = {
   '@typescript-eslint/no-extraneous-class': 'error',
   '@typescript-eslint/no-floating-promises': 'off', // Can't config
   '@typescript-eslint/no-for-in-array': 'error',
+  '@typescript-eslint/no-generated-empty-object-type': 'error',
   '@typescript-eslint/no-implied-eval': 'error',
   '@typescript-eslint/no-import-type-side-effects': 'error',
   '@typescript-eslint/no-inferrable-types': 'error',
   '@typescript-eslint/no-invalid-this': 'error',
   '@typescript-eslint/no-invalid-void-type': 'error',
-  '@typescript-eslint/no-loop-func': 'error',
   '@typescript-eslint/no-magic-numbers': 'off', // Too late
   '@typescript-eslint/no-meaningless-void-operator': 'off', // Can't config
   '@typescript-eslint/no-misused-new': 'error',
@@ -241,7 +241,6 @@ export const rules = {
   '@typescript-eslint/no-redeclare': 'off', // Not recommended
   '@typescript-eslint/no-redundant-type-constituents': 'off', // Can't config
   '@typescript-eslint/no-require-imports': 'error',
-  '@typescript-eslint/no-restricted-imports': 'off', // Not needed
   '@typescript-eslint/no-restricted-types': 'off', // Not needed
   '@typescript-eslint/no-shadow': 'error',
   '@typescript-eslint/no-this-alias': 'error',
@@ -314,8 +313,6 @@ export const rules = {
   '@typescript-eslint/strict-void-return': 'off', // Can't configure to except event handlers
   '@typescript-eslint/switch-exhaustiveness-check': 'off', // Can't config
   '@typescript-eslint/triple-slash-reference': 'error',
-  // Deprecated
-  // '@typescript-eslint/typedef': 'error',
   '@typescript-eslint/unbound-method': 'off', // Can't config
   '@typescript-eslint/unified-signatures': 'off', // Too hard
   '@typescript-eslint/use-unknown-in-catch-callback-variable': 'error',
