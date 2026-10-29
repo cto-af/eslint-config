@@ -9,7 +9,7 @@ export const rules = {
   'ava/hooks-order': 'error',
   'ava/max-asserts': 'off',
   'ava/no-async-fn-without-await': 'error',
-  'ava/no-ava-in-dependencies': 'error',
+  'ava/no-ava-in-dependencies': 'off',
   'ava/no-commented-tests': 'error',
   'ava/no-conditional-assertion': 'error',
   'ava/no-duplicate-hooks': 'error',
