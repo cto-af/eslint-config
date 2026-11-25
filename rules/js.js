@@ -55,7 +55,8 @@ export const rules = {
   'no-unsafe-optional-chaining': 'error',
   'no-unused-private-class-members': 'error',
   'no-unused-vars': [
-    'error', {
+    'error',
+    {
       args: 'all',
       argsIgnorePattern: '^_',
       caughtErrors: 'all',
@@ -221,9 +222,11 @@ export const rules = {
   'yoda': ['error', 'never', {exceptRange: true}],
 
   // [Stylistc](https://eslint.style/packages/default)
-  '@stylistic/array-bracket-newline': ['error', 'consistent'],
-  '@stylistic/array-bracket-spacing': ['error', 'never'],
-  '@stylistic/array-element-newline': ['error', 'consistent'],
+
+  // deprecated
+  // '@stylistic/array-bracket-newline': ['error', 'consistent'],
+  // '@stylistic/array-bracket-spacing': ['error', 'never'],
+  // '@stylistic/array-element-newline': ['error', 'consistent'],
   '@stylistic/arrow-parens': ['error', 'as-needed'],
   '@stylistic/arrow-spacing': 'error',
   '@stylistic/block-spacing': ['error', 'always'],
@@ -244,10 +247,11 @@ export const rules = {
   '@stylistic/dot-location': ['error', 'property'],
   '@stylistic/eol-last': 'error',
   '@stylistic/exp-jsx-props-style': 'off', // JSX
-  '@stylistic/exp-list-style': 'off', // Still experimental
-  '@stylistic/function-call-argument-newline': ['error', 'consistent'],
+
+  // Deprecated
+  // '@stylistic/function-call-argument-newline': ['error', 'consistent'],
+  // '@stylistic/function-paren-newline': ['error', 'consistent'],
   '@stylistic/function-call-spacing': 'error',
-  '@stylistic/function-paren-newline': ['error', 'consistent'],
   '@stylistic/generator-star-spacing': 'error',
   '@stylistic/implicit-arrow-linebreak': ['error', 'beside'],
   '@stylistic/indent': ['error', 2, {SwitchCase: 1}],
@@ -271,6 +275,8 @@ export const rules = {
   '@stylistic/jsx-quotes': 'off', // Not needed
   '@stylistic/jsx-self-closing-comp': 'off', // Not needed
   // '@stylistic/jsx-sort-props': 'off', // Deprecated
+  '@stylistic/jsx-shorthand-boolean': 'off', // Not needed
+  '@stylistic/jsx-shorthand-fragment': 'off', // Not needed
   '@stylistic/jsx-tag-spacing': 'off', // Not needed
   '@stylistic/jsx-wrap-multilines': 'off', // Not needed
 
@@ -289,6 +295,19 @@ export const rules = {
   }],
   '@stylistic/lines-between-class-members': ['error', 'always', {
     exceptAfterSingleLine: true,
+  }],
+  '@stylistic/list-style': ['error', {
+    empty: 'never',
+    singleLine: {
+      spacing: 'never',
+      maxItems: Infinity,
+    },
+    multiLine: {
+      minItems: 1,
+    },
+    overrides: {
+      '{}': {singleLine: {spacing: 'never'}},
+    },
   }],
   '@stylistic/max-len': ['error', 80, {
     ignoreRegExpLiterals: true,
@@ -315,9 +334,12 @@ export const rules = {
   '@stylistic/no-trailing-spaces': 'error',
   '@stylistic/no-whitespace-before-property': 'error',
   '@stylistic/nonblock-statement-body-position': 'error',
-  '@stylistic/object-curly-newline': 'error',
-  '@stylistic/object-curly-spacing': ['error', 'never'],
-  '@stylistic/object-property-newline': ['error', {allowAllPropertiesOnSameLine: true}],
+
+  // Deprecated
+  // '@stylistic/object-curly-newline': 'error',
+  // '@stylistic/object-curly-spacing': ['error', 'never'],
+  // '@stylistic/object-property-newline': ['error',
+  //   {allowAllPropertiesOnSameLine: true}],
   '@stylistic/one-var-declaration-per-line': 'error',
   '@stylistic/operator-linebreak': ['error', 'after'],
   '@stylistic/padded-blocks': ['error', 'never'],

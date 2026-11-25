@@ -257,6 +257,7 @@ export const rules = {
   '@typescript-eslint/no-unsafe-argument': 'off', // Can't config
   '@typescript-eslint/no-unsafe-assignment': 'off', // Can't config
   '@typescript-eslint/no-unsafe-call': 'off', // Can't config
+  '@typescript-eslint/no-unsafe-class-instance-assignment': 'error',
   '@typescript-eslint/no-unsafe-declaration-merging': 'error',
   '@typescript-eslint/no-unsafe-enum-assignment': 'error',
   '@typescript-eslint/no-unsafe-enum-comparison': 'error',
@@ -268,7 +269,8 @@ export const rules = {
   '@typescript-eslint/no-unused-expressions': 'error',
   '@typescript-eslint/no-unused-private-class-members': 'error',
   '@typescript-eslint/no-unused-vars': [
-    'error', {
+    'error',
+    {
       args: 'all',
       argsIgnorePattern: '^_',
       caughtErrors: 'all',
