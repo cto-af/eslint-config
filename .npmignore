@@ -1,7 +1,10 @@
+.devcontainer/
 .editorconfig
 .eslintrc.js
 .github/
 .ncurc
+.ncurc.js
+.pnpm-store/
 .vscode/
 eslint.config.js
 find/
@@ -9,3 +12,4 @@ node_modules
 pnpm-lock.yaml
 sort-rules/
 test/
+pnpm-workspace.yaml
